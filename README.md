@@ -35,13 +35,34 @@
 #### 역할 1
 #### 역할 2
 
-# 사용된 기술
+# 사용된 기술 (깔끔하게 정렬하기)
 ### IDE
 <div align="left">
 	<img src="https://img.shields.io/badge/VisualStudio Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
 	<img src="https://img.shields.io/badge/Truffle-5B474D?style=flat&logo=crunchyroll&logoColor=white" />
-	<img src="https://img.shields.io/badge/Ganache-E4A562?style=flat&logo=dpd&logoColor=white" />
+	<img src="https://img.shields.io/badge/Ganache-E4A562?style=flat&logo=task&logoColor=white" />
 </div>
+
+### Language
+<div align="left">
+	<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white" />
+	<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+	<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+	<img src="https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white" />
+</div>
+
+### Library
+<div align="left">
+	<img src="https://img.shields.io/badge/React Code-61DAFB?style=flat&logo=react&logoColor=white" />
+	<img src="https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white" />
+	<img src="https://img.shields.io/badge/Web3.js-F16822?style=flat&logo=web3dotjs&logoColor=white" />
+</div>
+
+### Chain
+
+### Deployment
+
+### Cooperation Tool
 
 리액트 테일윈드 솔리디티 등등 (차후 수정 예정)
 
