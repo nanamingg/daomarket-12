@@ -14,7 +14,7 @@
 |---|---|---|---|---|
 |팀장|프론트엔드 팀장|프론트엔드|백엔드 팀장|백엔드|
 
-## 역할 분담
+# 역할 분담
 ### 박준현
 #### 역할 1
 #### 역할 2
@@ -36,6 +36,13 @@
 #### 역할 2
 
 # 사용된 기술
+### IDE
+<div align="left">
+	<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=flat&logo=VisualStudio Code&logoColor=white" />
+	<img src="https://img.shields.io/badge/crunchyroll-5B474D?style=flat&logo=Truffle&logoColor=white" />
+	<img src="https://img.shields.io/badge/dpd-E4A562?style=flat&logo=Ganache&logoColor=white" />
+</div>
+
 리액트 테일윈드 솔리디티 등등 (차후 수정 예정)
 
 # 프로젝트 구조
