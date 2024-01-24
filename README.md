@@ -38,9 +38,9 @@
 # 사용된 기술
 ### IDE
 <div align="left">
-	<img src="https://img.shields.io/badge/visualstudiocode-007ACC?style=flat&logo=VisualStudio Code&logoColor=white" />
-	<img src="https://img.shields.io/badge/crunchyroll-5B474D?style=flat&logo=Truffle&logoColor=white" />
-	<img src="https://img.shields.io/badge/dpd-E4A562?style=flat&logo=Ganache&logoColor=white" />
+	<img src="https://img.shields.io/badge/VisualStudio Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white" />
+	<img src="https://img.shields.io/badge/Truffle-5B474D?style=flat&logo=crunchyroll&logoColor=white" />
+	<img src="https://img.shields.io/badge/Ganache-E4A562?style=flat&logo=dpd&logoColor=white" />
 </div>
 
 리액트 테일윈드 솔리디티 등등 (차후 수정 예정)
