@@ -4,10 +4,12 @@ import { FaFileCode } from "react-icons/fa";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import DarkmodeToggle from "./DarkmodeToggle";
 import Metamask from "../images/Metamask.png";
+import TopPopup from "./TopPopup";
 
 const Header = () => {
   return (
     <>
+      <TopPopup />
       <header className="text-gray-600 body-font dark:text-white">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <div className="flex mt-1 title-font font-medium items-center text-gray-900 mb-4 md:mb-0 dark:text-white">
