@@ -1,6 +1,5 @@
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaFileCode } from "react-icons/fa";
 import { IoPersonSharp } from "react-icons/io5";
-import { FaFileCode } from "react-icons/fa";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import DarkmodeToggle from "./DarkmodeToggle";
 import Metamask from "../images/Metamask.png";
@@ -10,9 +9,8 @@ import { useSDK } from "@metamask/sdk-react";
 import { useState } from "react";
 
 const Header = () => {
-  const [account, setAccount] = useState("");
-
   const { sdk } = useSDK();
+  const [account, setAccount] = useState("");
 
   const onClickMetamask = async () => {
     try {
@@ -23,6 +21,7 @@ const Header = () => {
       console.error(error);
     }
   };
+
   return (
     <>
       <TopPopup />
