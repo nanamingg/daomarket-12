@@ -1,5 +1,5 @@
 const Agenda = () => {
-  return <></>;
+  return <>안건</>;
 };
 
 export default Agenda;

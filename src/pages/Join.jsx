@@ -1,5 +1,5 @@
 const Join = () => {
-  return <></>;
+  return <>함께하자</>;
 };
 
 export default Join;
