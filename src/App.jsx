@@ -3,14 +3,22 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
+import Join from "./pages/Join";
+import Agenda from "./pages/Agenda";
+import Contact from "./pages/Contact";
+import Header from "./components/Header";
 
 const App = () => {
   return (
     <ThemeProvider attribute="class">
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Join" element={<Join />} />
+          <Route path="/Agenda" element={<Agenda />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </Router>
     </ThemeProvider>

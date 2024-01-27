@@ -21,24 +21,27 @@ const TopPopup = () => {
   }, []);
 
   return (
-    <div
-      className={`h-[35px] border-b border-gray-400 mx-16 ${
-        isClose && "hidden"
-      }`}
-    >
-      <div className="container flex justify-between items-center">
-        <div className="flex items-center justify-center mt-1 w-full">
-          <span className="font-semibold text-center">
-            Dao Market에서 진행 중인 Dao 바로가기 (클릭하면 이동하게 수정 예정,
-            로컬스토리지로 팝업을 한번 닫으면 다시 보이지 않도록 수정 완료)
-          </span>
+    <div className="dark:bg-slate-800">
+      <div
+        className={`h-[35px] border-b border-gray-400 mx-16  ${
+          isClose && "hidden"
+        }`}
+      >
+        <div className="container flex justify-between items-center ">
+          <div className="flex items-center justify-center mt-1 w-full">
+            <span className="font-semibold text-center">
+              Dao Market에서 진행 중인 Dao 바로가기 (클릭하면 이동하게 수정
+              예정, 로컬스토리지로 팝업을 한번 닫으면 다시 보이지 않도록 수정
+              완료)
+            </span>
+          </div>
+          <button
+            className="w-5 absolute right-0 mr-[200px]"
+            onClick={onClickClose}
+          >
+            <IoCloseSharp className="mt-1" />
+          </button>
         </div>
-        <button
-          className="w-5 absolute right-0 mr-[200px]"
-          onClick={onClickClose}
-        >
-          <IoCloseSharp className="mt-1" />
-        </button>
       </div>
     </div>
   );
