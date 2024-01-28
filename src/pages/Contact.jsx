@@ -6,10 +6,9 @@ import consultationOnline from "../images/consultationOnline.png";
 const Contact = () => {
   return (
     <div className="bg-darkMode">
-      <div className="mb-32"></div>{" "}
-      {/* 상단에 여백을 주려고 Layout 아래에도 넣어봤고 여기에도 넣어봤는데 다크모드가 이 부분만 안 먹히네요. 차후 수정해 보겠습니다. */}
       <Layout>
-        <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font relative">
+        {/* 상단에 여백을 주려고 Layout 아래에도 넣어봤고 여기에도 넣어봤는데 다크모드가 이 부분만 안 먹히네요. 차후 수정해 보겠습니다. */}
+        <section className="pt-32 flex min-h-screen flex-col items-center justify-center text-gray-600 body-font relative">
           <div className="flex">
             <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center">
               <img

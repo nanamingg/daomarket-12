@@ -75,32 +75,29 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <DarkmodeToggle />
-
           {/* 메타마스크 로그인 버튼을 고정값으로 주거나 다크모드 버튼과 떨어뜨려서 로그인, 로그아웃 전환 시 다크모드 버튼이 안 움직이게 해야하는데 차후 수정하겠습니다. */}
           <div>
+            <DarkmodeToggle />
+          </div>
+          <div className="pl-8">
             {account ? (
-              <div>
-                {/* 버튼 효과 주려면 상단 div 수정 */}
+              <div className="w-[163px]">
                 <span>
-                  {account.substring(0, 7)}...
-                  {account.substring(account.length - 5)}
+                  {`${account.substring(0, 7)}...${account.substring(
+                    account.length - 5
+                  )}`}
                 </span>
                 <button className="ml-2" onClick={() => setAccount("")}>
                   Logout
                 </button>
               </div>
             ) : (
-              <button onClick={onClickMetaMask}>
-                <div className="flex">
-                  {/* 버튼 효과 주려면 상단 div 수정 */}
-                  <img
-                    src={Metamask}
-                    alt="Metamask"
-                    style={{ width: "30px" }}
-                  />
-                  &nbsp;MetaMask Login
-                </div>
+              <button
+                onClick={onClickMetaMask}
+                className="flex items-center w-[163px]"
+              >
+                <img src={Metamask} alt="Metamask" className="w-8 mr-2" />
+                <span>MetaMask Login</span>
               </button>
             )}
           </div>
