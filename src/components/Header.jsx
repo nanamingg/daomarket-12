@@ -79,7 +79,7 @@ const Header = () => {
           <div>
             <DarkmodeToggle />
           </div>
-          <div className="pl-8">
+          <div className="pl-6 mr-2">
             {account ? (
               <div className="w-[170px] flex">
                 <span>
