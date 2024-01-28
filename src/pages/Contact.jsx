@@ -85,14 +85,14 @@ const Contact = () => {
               </button>
             </div>
             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <a class="text-indigo-500">연락처나 이메일 작성?</a>
+              <div class="text-indigo-500">연락처나 이메일 작성?</div>
               <div class="leading-normal my-5">
                 여기엔
                 <br />
                 주소를 넣을까요
               </div>
               <span class="inline-flex">
-                <a class="text-gray-500"></a>
+                <div class="text-gray-500"></div>
               </span>
             </div>
           </div>
