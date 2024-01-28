@@ -7,6 +7,7 @@ import Join from "./pages/Join";
 import Agenda from "./pages/Agenda";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
+import IntroduceDaoMarket from "./pages/IntroduceDaoMarket";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/Join" element={<Join />} />
           <Route path="/Agenda" element={<Agenda />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/IntroduceDaoMarket" element={<IntroduceDaoMarket />} />
         </Routes>
       </Router>
     </ThemeProvider>

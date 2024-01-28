@@ -74,6 +74,13 @@ const Header = () => {
                 </div>
               </Link>
             </div>
+            {/* 더미페이지 */}
+            <div className="mr-5 hover:text-gray-900 flex items-center">
+              <Link to="/IntroduceDaoMarket">
+                <div className="flex items-center">&nbsp;⭐️ 더미페이지</div>
+              </Link>
+            </div>
+            {/* 더미페이지 */}
           </div>
           <div>
             <DarkmodeToggle />
