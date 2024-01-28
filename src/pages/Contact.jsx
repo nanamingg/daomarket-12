@@ -1,27 +1,46 @@
 import Layout from "../components/Layout";
-import { PiPhoneCallLight } from "react-icons/pi";
+import consultationCall from "../images/consultationCall.png";
+import consultationChat from "../images/consultationChat.png";
+import consultationOnline from "../images/consultationOnline.png";
 
 const Contact = () => {
   return (
     <div className="bg-darkMode">
+      <div className="mb-32"></div>{" "}
+      {/* 상단에 여백을 주려고 Layout 아래에도 넣어봤고 여기에도 넣어봤는데 다크모드가 이 부분만 안 먹히네요. 차후 수정해 보겠습니다. */}
       <Layout>
-        {/* 하단 태그에서 justify-start를 하면 컨텐츠가 상단에, justify-center로 하면 중간에 위치되는데 공간이 휑하네요. */}
-        {/* Contact Us 상단에 공간이 휑해서 전화상담, 온라인 상담, 카카오톡 상담을 만들 예정 */}
         <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font relative">
           <div className="flex">
             <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center">
-              <PiPhoneCallLight className="text-8xl text-blue-500 mb-8" />
-              전화 상담
+              <img
+                src={consultationCall}
+                alt="consultationCall"
+                style={{ width: "100px" }}
+              />
+              <div className="text-xl font-semibold">전화 상담</div>
               <br />
               평일 오전 9시 ~ 오후 6시
+              <a href="tel:1234567890">전화 걸기</a>
             </div>
-            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12">
-              온라인 상담
+
+            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center">
+              <img
+                src={consultationOnline}
+                alt="consultationOnline"
+                style={{ width: "100px" }}
+              />
+              <div className="text-xl font-semibold">온라인 상담</div>
               <br />
               365일 24시간
+              <br /> 아래 양식을 작성해 주세요.
             </div>
-            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12">
-              카카오톡 채팅상담
+            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center">
+              <img
+                src={consultationChat}
+                alt="consultationChat"
+                style={{ width: "100px" }}
+              />
+              <div className="text-xl font-semibold">카카오톡 채팅상담</div>
               <br />
               평일 오전 10시 ~ 오후 5시
             </div>
@@ -37,7 +56,7 @@ const Contact = () => {
                 아래의 양식을 작성해 주시면 빠르게 답변드리겠습니다.
               </div>
             </div>
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="lg:w-1/2 md:w-2/3 mx-auto mt-12">
               <div class="flex flex-wrap -m-2">
                 <div class="p-2 w-1/2">
                   <div class="relative">
