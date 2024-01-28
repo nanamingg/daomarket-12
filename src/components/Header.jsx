@@ -12,7 +12,7 @@ const Header = () => {
   const { sdk } = useSDK();
   const [account, setAccount] = useState("");
 
-  const onClickMetamask = async () => {
+  const onClickMetaMask = async () => {
     try {
       const accounts = await sdk?.connect();
 
@@ -76,21 +76,30 @@ const Header = () => {
             </div>
           </div>
           <DarkmodeToggle />
-          <div className="ml-3">
+
+          {/* 메타마스크 로그인 버튼을 고정값으로 주거나 다크모드 버튼과 떨어뜨려서 로그인, 로그아웃 전환 시 다크모드 버튼이 안 움직이게 해야하는데 차후 수정하겠습니다. */}
+          <div>
             {account ? (
-              <span>
-                {account.substring(0, 7)}...
-                {account.substring(account.length - 5)}
-              </span>
+              <div>
+                {/* 버튼 효과 주려면 상단 div 수정 */}
+                <span>
+                  {account.substring(0, 7)}...
+                  {account.substring(account.length - 5)}
+                </span>
+                <button className="ml-2" onClick={() => setAccount("")}>
+                  Logout
+                </button>
+              </div>
             ) : (
-              <button onClick={onClickMetamask}>
-                <div className="flex hover:scale-110 duration-300 ml-4">
+              <button onClick={onClickMetaMask}>
+                <div className="flex">
+                  {/* 버튼 효과 주려면 상단 div 수정 */}
                   <img
                     src={Metamask}
                     alt="Metamask"
                     style={{ width: "30px" }}
                   />
-                  &nbsp;Login
+                  &nbsp;MetaMask Login
                 </div>
               </button>
             )}
