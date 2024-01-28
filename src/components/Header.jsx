@@ -81,7 +81,7 @@ const Header = () => {
           </div>
           <div className="pl-8">
             {account ? (
-              <div className="w-[163px]">
+              <div className="w-[170px] flex">
                 <span>
                   {`${account.substring(0, 7)}...${account.substring(
                     account.length - 5
@@ -94,7 +94,7 @@ const Header = () => {
             ) : (
               <button
                 onClick={onClickMetaMask}
-                className="flex items-center w-[163px]"
+                className="flex items-center w-[170px]"
               >
                 <img src={Metamask} alt="Metamask" className="w-8 mr-2" />
                 <span>MetaMask Login</span>
