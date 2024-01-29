@@ -8,7 +8,7 @@ const WhyChooseDaoMarket = () => {
       <div class="container px-5 py-24 mx-auto">
         <div class="text-center mb-20">
           <h1 class="sm:text-5xl text-3xl font-medium title-font text-gray-900 mb-4">
-            왜 다오마켓을 선택해야 하나요?
+            왜 Dao Market을 선택해야 하나요?
           </h1>
           <p class="text-2xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
             당신이 차별화된 다오마켓을 선택해야 하는 이유 3가지 요소입니다.
