@@ -10,11 +10,11 @@ const WhatIsDaoMarket = () => {
             Dao Market이란 블라블라블라블라블라블라
             <br />
             블라블라블라블라블라블라블라블라
-          </p>
-          <div className="flex justify-center text-black">
+            <br />
+            <br />
             즉, Dao Market은 블라블라블라블라블라블라블라블라블라
             <br /> 블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라
-          </div>
+          </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <div>여기엔 이미지를 첨부</div>
