@@ -10,38 +10,44 @@ const Contact = () => {
         {/* 개인프로젝트에서 문의사항이 딱히 의미가 있나 싶지만 진짜 사이트처럼 구색을 맞췄고, 문의사항을 입력하면 텔레그램 api를 사용해서 정말 연락을 받을 수 있게 제작 예정입니다. */}
         <section className="pt-32 flex min-h-screen flex-col items-center justify-center text-gray-600 body-font relative">
           <div className="flex">
-            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center">
+            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
               <img
                 src={consultationCall}
                 alt="consultationCall"
                 style={{ width: "100px" }}
+                className="mx-28 mt-2"
               />
-              <div className="text-xl font-semibold">전화 상담</div>
+              <div className="text-xl font-semibold mt-8">전화 상담</div>
               <br />
               평일 오전 9시 ~ 오후 6시
-              <a href="tel:1234567890">전화 걸기</a>
+              <br /> 코로나19로 인해 전화 상담이 불가능합니다.
             </div>
-
-            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center">
+            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
               <img
                 src={consultationOnline}
                 alt="consultationOnline"
                 style={{ width: "100px" }}
+                className="mx-28 mt-2"
               />
-              <div className="text-xl font-semibold">온라인 상담</div>
+              <div className="text-xl font-semibold mt-8">온라인 상담</div>
               <br />
               365일 24시간
               <br /> 아래 양식을 작성해 주세요.
             </div>
-            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center">
+            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
               <img
                 src={consultationChat}
                 alt="consultationChat"
                 style={{ width: "100px" }}
+                className="mx-28 mt-2"
               />
-              <div className="text-xl font-semibold">카카오톡 채팅상담</div>
+              <div className="text-xl font-semibold mt-8">
+                카카오톡 채팅상담
+              </div>
               <br />
               평일 오전 10시 ~ 오후 5시
+              <br />
+              ID : @daomarket4
             </div>
           </div>
           <div class="container px-5 py-24 mx-auto">
@@ -103,11 +109,11 @@ const Contact = () => {
               </button>
             </div>
             <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <div class="text-indigo-500">연락처나 이메일 작성?</div>
+              <div class="text-indigo-500">daomarket4@project.com</div>
               <div class="leading-normal my-5">
-                여기엔
+                서울시 중구 세종대로 110
                 <br />
-                주소를 넣을까요
+                101호, DaoMarket
               </div>
               <span class="inline-flex">
                 <div class="text-gray-500"></div>
