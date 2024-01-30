@@ -10,7 +10,7 @@ const Contact = () => {
         {/* 개인프로젝트에서 문의사항이 딱히 의미가 있나 싶지만 진짜 사이트처럼 구색을 맞췄고, 문의사항을 입력하면 텔레그램 api를 사용해서 정말 연락을 받을 수 있게 제작 예정입니다. */}
         <section className="pt-32 flex min-h-screen flex-col items-center justify-center text-gray-600 body-font relative">
           <div className="flex">
-            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
+            <div className="box border border-gray-300 p-4 py-8 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
               <img
                 src={consultationCall}
                 alt="consultationCall"
@@ -22,7 +22,7 @@ const Contact = () => {
               평일 오전 9시 ~ 오후 6시
               <br /> 코로나19로 인해 전화 상담이 불가능합니다.
             </div>
-            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
+            <div className="box border border-gray-300 p-4 py-8 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
               <img
                 src={consultationOnline}
                 alt="consultationOnline"
@@ -34,7 +34,7 @@ const Contact = () => {
               365일 24시간
               <br /> 아래 양식을 작성해 주세요.
             </div>
-            <div className="box border border-gray-300 p-4 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
+            <div className="box border border-gray-300 p-4 py-8 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
               <img
                 src={consultationChat}
                 alt="consultationChat"
@@ -52,7 +52,7 @@ const Contact = () => {
           </div>
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-12">
-              <div class="text-5xl font-medium title-font mb-4 text-gray-900">
+              <div class="text-5xl font-medium title-font mb-4 text-gray-900 dark:text-white">
                 Contact Us
               </div>
               <div class="lg:w-2/3 mx-auto leading-relaxed text-xl font-semi-bold">

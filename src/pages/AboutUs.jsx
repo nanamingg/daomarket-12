@@ -1,5 +1,10 @@
 import Layout from "../components/Layout";
 import { BsGithub } from "react-icons/bs";
+import junhyunpark from "../images/junhyunpark.png";
+import kihyunkim from "../images/kihyunkim.png";
+import junhyukjung from "../images/junhyukjung.png";
+import juyoungjung from "../images/juyoungjung.png";
+import jungbinkim from "../images/jungbinkim.png";
 
 const AboutUs = () => {
   return (
@@ -20,7 +25,11 @@ const AboutUs = () => {
             <div className="flex flex-wrap -m-4">
               <div className="p-4 lg:w-1/5 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
-                  <div className="mb-8">각자 이미지 넣기</div>
+                  <img
+                    src={junhyunpark}
+                    alt="junhyunpark"
+                    className="mb-8 w-42 mr-2 rounded-full border border-black"
+                  />
                   <div className="w-full">
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       박준현
@@ -45,7 +54,11 @@ const AboutUs = () => {
               </div>
               <div className="p-4 lg:w-1/5 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
-                  <div className="mb-8">각자 이미지 넣기</div>
+                  <img
+                    src={kihyunkim}
+                    alt="kihyunkim"
+                    className="mb-8 w-42 mr-2 rounded-full border border-black"
+                  />
                   <div className="w-full">
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       김기현
@@ -70,7 +83,11 @@ const AboutUs = () => {
               </div>
               <div className="p-4 lg:w-1/5 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
-                  <div className="mb-8">각자 이미지 넣기</div>
+                  <img
+                    src={junhyukjung}
+                    alt="junhyukjung"
+                    className="mb-8 w-42 mr-2 rounded-full border border-black"
+                  />
                   <div className="w-full">
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       정준혁
@@ -95,7 +112,11 @@ const AboutUs = () => {
               </div>
               <div className="p-4 lg:w-1/5 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
-                  <div className="mb-8">각자 이미지 넣기</div>
+                  <img
+                    src={juyoungjung}
+                    alt="juyoungjung"
+                    className="mb-8 w-42 mr-2 rounded-full border border-black"
+                  />
                   <div className="w-full">
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       정주영
@@ -120,7 +141,11 @@ const AboutUs = () => {
               </div>
               <div className="p-4 lg:w-1/5 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
-                  <div className="mb-8">각자 이미지 넣기</div>
+                  <img
+                    src={jungbinkim}
+                    alt="jungbinkim"
+                    className="mb-8 w-42 mr-2 rounded-full border border-black"
+                  />
                   <div className="w-full">
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       김정빈

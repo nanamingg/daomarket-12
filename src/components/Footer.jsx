@@ -1,4 +1,5 @@
 import React from "react";
+import { BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -21,10 +22,13 @@ const Footer = () => {
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center mr-8 sm:justify-start">
-            {/* 깃허브 팀프로젝트 바로가기 */}
-            <div className="text-gray-500">
-              여기에 깃허브 바로가기 올릴 예정
-            </div>
+            <a
+              href="https://github.com/daomarket4/daomarket"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsGithub className="text-xl" />
+            </a>
           </span>
         </div>
       </div>
