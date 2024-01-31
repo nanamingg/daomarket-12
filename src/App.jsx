@@ -8,6 +8,7 @@ import Agenda from "./pages/Agenda";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import IntroduceDaoMarket from "./pages/IntroduceDaoMarket";
+import Vote from "./pages/Vote";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/Agenda" element={<Agenda />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/IntroduceDaoMarket" element={<IntroduceDaoMarket />} />
+          <Route path="/Vote" element={<Vote />} />
         </Routes>
       </Router>
     </ThemeProvider>
