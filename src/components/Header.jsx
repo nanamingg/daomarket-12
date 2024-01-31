@@ -1,4 +1,5 @@
 import { FaHome, FaFileCode } from "react-icons/fa";
+import DAOM from "../images/DAOM.png";
 import { IoPersonSharp } from "react-icons/io5";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import DarkmodeToggle from "./DarkmodeToggle";
@@ -29,8 +30,13 @@ const Header = () => {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link to="/">
             <div className="flex mt-1 title-font font-medium items-center text-gray-900 mb-4 md:mb-0 dark:text-white">
-              (로고)
-              <span className="ml-3 text-2xl font-HeaderFont">Dao Market</span>
+              <img src={DAOM} alt="DAOM" className="w-16 mr-2" />
+              <span className="ml-3 text-2xl font-HeaderFont text-blue-500">
+                DAOM
+              </span>
+              <span className="ml-1 text-2xl font-HeaderFont text-black">
+                arket
+              </span>
             </div>
           </Link>
           <div className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
@@ -38,7 +44,7 @@ const Header = () => {
               <Link to="/">
                 <div className="flex items-center">
                   <FaHome className="mr-1" />
-                  &nbsp;다오마켓
+                  &nbsp;다옴
                 </div>
               </Link>
             </div>

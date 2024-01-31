@@ -4,8 +4,9 @@ const Main = () => {
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-5xl text-3xl mb-4 font-thin text-gray-900">
-            <div className="text-7xl">
-              <b>Dao Market</b>
+            <div className="text-7xl text-blue-500 flex">
+              <b>DAOM</b>
+              <div className="text-black">&nbsp;arket</div>
             </div>
             <br className="hidden lg:inline-block" />
             <b>NFT</b>와 <b>DAO</b>의 조화로운 만남

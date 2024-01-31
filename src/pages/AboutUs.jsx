@@ -15,10 +15,10 @@ const AboutUs = () => {
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
               <h1 className="text-4xl font-medium title-font mb-4 text-gray-900">
-                블록체인스쿨 4기 - 프로젝트 4팀
+                블록체인스쿨 4기 - Team DAOM
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                안녕하세요. 프로젝트 Dao Market을 진행한 4팀입니다. <br />
+                안녕하세요. 프로젝트 Dao Market을 진행한 팀 다옴입니다. <br />
                 소개소개소개
               </p>
             </div>
@@ -34,8 +34,10 @@ const AboutUs = () => {
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       박준현
                     </h2>
-                    <h3 className="text-gray-500 mb-3">프로젝트 팀장</h3>
-                    <p className="mb-4">역할이나 할 말 등등 작성하기</p>
+                    <h3 className="text-gray-500 mb-3">Project Team Leader</h3>
+                    <p className="mb-4">
+                      역할역역할역할역할역할역할 할말할말할말할말할말
+                    </p>
                     <span className="inline-flex">
                       <div className="text-gray-500">
                         <div>
@@ -63,8 +65,10 @@ const AboutUs = () => {
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       김기현
                     </h2>
-                    <h3 className="text-gray-500 mb-3">프론트엔드</h3>
-                    <p className="mb-4">역할이나 할 말 등등 작성하기</p>
+                    <h3 className="text-gray-500 mb-3">Frontend</h3>
+                    <p className="mb-4">
+                      역할역역할역할역할역할역할 할말할말할말할말할말
+                    </p>
                     <span className="inline-flex">
                       <div className="text-gray-500">
                         <div>
@@ -92,8 +96,10 @@ const AboutUs = () => {
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       정준혁
                     </h2>
-                    <h3 className="text-gray-500 mb-3">프론트엔드</h3>
-                    <p className="mb-4">역할이나 할 말 등등 작성하기</p>
+                    <h3 className="text-gray-500 mb-3">Frontend</h3>
+                    <p className="mb-4">
+                      역할역역할역할역할역할역할 할말할말할말할말할말
+                    </p>
                     <span className="inline-flex">
                       <div className="text-gray-500">
                         <div>
@@ -121,8 +127,10 @@ const AboutUs = () => {
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       정주영
                     </h2>
-                    <h3 className="text-gray-500 mb-3">백엔드</h3>
-                    <p className="mb-4">역할이나 할 말 등등 작성하기</p>
+                    <h3 className="text-gray-500 mb-3">Backend</h3>
+                    <p className="mb-4">
+                      역할역역할역할역할역할역할 할말할말할말할말할말
+                    </p>
                     <span className="inline-flex">
                       <div className="text-gray-500">
                         <div>
@@ -150,8 +158,10 @@ const AboutUs = () => {
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       김정빈
                     </h2>
-                    <h3 className="text-gray-500 mb-3">백엔드</h3>
-                    <p className="mb-4">역할이나 할 말 등등 작성하기</p>
+                    <h3 className="text-gray-500 mb-3">Backend</h3>
+                    <p className="mb-4">
+                      역할역역할역할역할역할역할 할말할말할말할말할말
+                    </p>
                     <span className="inline-flex">
                       <div className="text-gray-500">
                         <div>

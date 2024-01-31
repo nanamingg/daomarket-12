@@ -2,7 +2,7 @@ const HowCanIUseDaoMarket = () => {
   return (
     <>
       <h1 class="sm:text-5xl text-3xl font-medium title-font text-gray-900 mt-32 mb-4">
-        Dao Market은 어떻게 사용하나요?
+        DAOM은 어떻게 사용하나요?
       </h1>
       <p class="text-2xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 text-center">
         아래 설명을 따라한다면 옆집 강아지 뽀삐도 Dao Market을 사용할 수
