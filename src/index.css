@@ -61,3 +61,34 @@ p {
   @apply text-slate-500 dark:text-slate-400;
 }
 /* 여기까지 모두 다크모드 관련 CSS */
+
+.submenu {
+  float: left;
+  position: absolute;
+  display: none;
+}
+
+.mainmenu:hover > .submenu {
+  display: block;
+}
+
+.speech-bubble {
+  position: absolute;
+  background: #475569;
+  border-radius: 0.4em;
+  margin-top: 10px;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-color: #475569;
+  border-top: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+}

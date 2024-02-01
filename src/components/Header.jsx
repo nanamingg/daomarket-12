@@ -1,13 +1,13 @@
-import { FaHome, FaFileCode } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import DAOM from "../images/DAOM.png";
 import { IoPersonSharp } from "react-icons/io5";
-import { TbMessageCircle2Filled } from "react-icons/tb";
 import DarkmodeToggle from "./DarkmodeToggle";
 import Metamask from "../images/Metamask.png";
 import TopPopup from "./TopPopup";
 import { Link } from "react-router-dom";
 import { useSDK } from "@metamask/sdk-react";
 import { useState } from "react";
+import DropDown from "./DropDown";
 
 const Header = () => {
   const { sdk } = useSDK();
@@ -26,11 +26,11 @@ const Header = () => {
   return (
     <>
       <TopPopup />
-      <header className="text-gray-600 body-font dark:text-white dark:bg-slate-800">
+      <header className="text-gray-600 pb-16 body-font dark:text-white dark:bg-slate-800">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link to="/">
             <div className="flex mt-1 title-font font-medium items-center text-gray-900 mb-4 md:mb-0 dark:text-white">
-              <img src={DAOM} alt="DAOM" className="w-16 mr-2" />
+              <img src={DAOM} alt="DAOM" className="mr-2 w-32 pb-4" />
               <span className="ml-3 text-2xl font-HeaderFont text-blue-500">
                 DAOM
               </span>
@@ -56,30 +56,7 @@ const Header = () => {
                 </div>
               </Link>
             </div>
-            <div className="mr-5 hover:text-gray-900 flex items-center">
-              <Link to="/Join">
-                <div className="flex items-center">
-                  <FaFileCode className="mr-1" />
-                  &nbsp;참여
-                </div>
-              </Link>
-            </div>
-            <div className="mr-5 hover:text-gray-900 flex items-center">
-              <Link to="/Agenda">
-                <div className="flex items-center">
-                  <FaFileCode className="mr-1" />
-                  &nbsp;안건
-                </div>
-              </Link>
-            </div>
-            <div className="mr-5 hover:text-gray-900 flex items-center">
-              <Link to="/Contact">
-                <div className="flex items-center">
-                  <TbMessageCircle2Filled className="mr-1" />
-                  &nbsp;1:1 문의
-                </div>
-              </Link>
-            </div>
+            <DropDown />
             {/* 더미페이지 */}
             <div className="mr-5 hover:text-gray-900 flex items-center">
               <Link to="/IntroduceDaoMarket">
