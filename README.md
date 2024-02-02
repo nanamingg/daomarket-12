@@ -14,10 +14,12 @@ DAOM은 Dao를 통한 개인주도형 공동 투자플랫폼 입니다. DAOM은 
 # 팀원 구성
 
 
-|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|
+|![junhyunpark](https://github.com/daomarket4/daomarket/assets/148733543/fa9ab16e-d319-4e89-a1f5-1711892098b5)|![kihyunkim](https://github.com/daomarket4/daomarket/assets/148733543/0993c53f-357f-4c7f-b6ab-adcbaf2a9f63)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![juyoungjung](https://github.com/daomarket4/daomarket/assets/148733543/89db5764-ec80-41be-9415-3e38b20bb9b0)|![jungbinkim](https://github.com/daomarket4/daomarket/assets/148733543/200867c3-ace1-4fca-bc62-19b0f585784d)|
 |---|---|---|---|---|
-|박준현|김기현|정준혁|정주영|김정빈|
 |팀장|프론트엔드 팀장|프론트엔드|백엔드 팀장|백엔드|
+|박준현|김기현|정준혁|정주영|김정빈|
+|<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white" />(http://www.naver.com)|a|b|c|d
+
 
 # 역할 분담
 ### 박준현
