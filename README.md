@@ -18,7 +18,7 @@ DAOM은 Dao를 통한 개인주도형 공동 투자플랫폼 입니다. DAOM은 
 |---|---|---|---|---|
 |팀장|프론트엔드 팀장|프론트엔드|백엔드 팀장|백엔드|
 |박준현|김기현|정준혁|정주영|김정빈|
-|<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=white" />(http://www.naver.com)|a|b|c|d
+|[<img src="https://img.shields.io/badge/Github-181717?style=flat&logo=github&logoColor=white" />](https://github.com/parkliam)|[<img src="https://img.shields.io/badge/Github-181717?style=flat&logo=github&logoColor=white" />](https://github.com/rootel123)|<img src="https://img.shields.io/badge/Github-181717?style=flat&logo=github&logoColor=white" />](https://github.com/rootel123|<img src="https://img.shields.io/badge/Github-181717?style=flat&logo=github&logoColor=white" />](https://github.com/rootel123|<img src="https://img.shields.io/badge/Github-181717?style=flat&logo=github&logoColor=white" />](https://github.com/rootel123|
 
 
 # 역할 분담
