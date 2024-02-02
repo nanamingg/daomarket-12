@@ -12,8 +12,9 @@ DAOM은 Dao를 통한 개인주도형 공동 투자플랫폼 입니다. DAOM은 
 (내용 추가..)
 
 # 팀원 구성
-|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|
+
 |박준현|김기현|정준혁|정주영|김정빈|
+|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|![junhyukjung](https://github.com/daomarket4/daomarket/assets/148733543/88497334-d234-4a8e-b950-e751855ad305)|
 |---|---|---|---|---|
 |팀장|프론트엔드 팀장|프론트엔드|백엔드 팀장|백엔드|
 
