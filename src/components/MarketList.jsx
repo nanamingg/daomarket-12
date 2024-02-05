@@ -20,7 +20,7 @@ const MarketList = () => {
               <h2 className="text-gray-900 title-font text-lg font-medium">
                 아이템
               </h2>
-              <p className="mt-1">가격</p>
+              <p className="mt-1">펀딩 진행 상황</p>
             </div>
           </div>
           <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
@@ -35,7 +35,7 @@ const MarketList = () => {
               <h2 className="text-gray-900 title-font text-lg font-medium">
                 아이템
               </h2>
-              <p className="mt-1">가격</p>
+              <p className="mt-1">펀딩 진행 상황</p>
             </div>
           </div>
           <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
@@ -50,7 +50,7 @@ const MarketList = () => {
               <h2 className="text-gray-900 title-font text-lg font-medium">
                 아이템
               </h2>
-              <p className="mt-1">가격</p>
+              <p className="mt-1">펀딩 진행 상황</p>
             </div>
           </div>
           <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
@@ -65,7 +65,7 @@ const MarketList = () => {
               <h2 className="text-gray-900 title-font text-lg font-medium">
                 아이템
               </h2>
-              <p className="mt-1">가격</p>
+              <p className="mt-1">펀딩 진행 상황</p>
             </div>
           </div>
           <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
@@ -80,7 +80,7 @@ const MarketList = () => {
               <h2 className="text-gray-900 title-font text-lg font-medium">
                 아이템
               </h2>
-              <p className="mt-1">가격</p>
+              <p className="mt-1">펀딩 진행 상황</p>
             </div>
           </div>
           <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
@@ -95,7 +95,7 @@ const MarketList = () => {
               <h2 className="text-gray-900 title-font text-lg font-medium">
                 아이템
               </h2>
-              <p className="mt-1">가격</p>
+              <p className="mt-1">펀딩 진행 상황</p>
             </div>
           </div>
         </div>
