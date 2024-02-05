@@ -1,5 +1,5 @@
 import { TbMessageCircle2Filled } from "react-icons/tb";
-import { FaFileCode, FaHome, FaStore } from "react-icons/fa";
+import { FaHome, FaStore } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const DropDown = () => {
