@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import IntroduceDaoMarket from "./pages/IntroduceDaoMarket";
 import Vote from "./pages/Vote";
+import MarketPlaceDetail from "./pages/MarketPlaceDetail";
+import MarketPlaceList from "./pages/MarketPlaceList";
 
 const App = () => {
   return (
@@ -23,6 +25,8 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/IntroduceDaoMarket" element={<IntroduceDaoMarket />} />
           <Route path="/Vote" element={<Vote />} />
+          <Route path="/MarketPlaceDetail" element={<MarketPlaceDetail />} />
+          <Route path="/MarketPlaceList" element={<MarketPlaceList />} />
         </Routes>
       </Router>
     </ThemeProvider>

@@ -47,7 +47,7 @@ const Contact = () => {
               <br />
               평일 오전 10시 ~ 오후 5시
               <br />
-              ID : @daomarket4
+              ID : @daom
             </div>
           </div>
           <div class="container px-5 py-24 mx-auto">

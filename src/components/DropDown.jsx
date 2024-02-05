@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const DropDown = () => {
   return (
     <ul className="flex">
-      <li className=" mainmenu">
+      <li className="mainmenu">
         <Link to="/Join" className="mr-5 hover:text-gray-900 flex items-center">
           <FaFileCode className="mr-1" />
           &nbsp;참여

@@ -5,8 +5,8 @@ const HowCanIUseDaoMarket = () => {
         DAOM은 어떻게 사용하나요?
       </h1>
       <p class="text-2xl leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 text-center">
-        아래 설명을 따라한다면 옆집 강아지 뽀삐도 Dao Market을 사용할 수
-        있습니다.
+        아래 순서를 참고하여 주십시오. (자세한 순서는 프론트엔드 완성 후 재작성
+        예정)
       </p>
       <div class="flex mt-6 justify-center">
         <div class="w-16 h-1 rounded-full bg-gray-500 inline-flex"></div>
