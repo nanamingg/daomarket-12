@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import { BsGithub } from "react-icons/bs";
+import DAOMLOGO from "../images/DAOMLOGO.png";
 import junhyunpark from "../images/junhyunpark.png";
 import kihyunkim from "../images/kihyunkim.png";
 import junhyukjung from "../images/junhyukjung.png";
@@ -11,7 +12,7 @@ const AboutUs = () => {
     <div className="bg-darkMode">
       <Layout>
         <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
-          <div>이 쯤에 프로젝트 로고 넣기</div>
+          <img src={DAOMLOGO} alt="DAOMLOGO" className="mb-8 w-72 mr-2" />
           <div className="container px-5 py-24 mx-auto">
             <div className="flex flex-col text-center w-full mb-20">
               <h1 className="text-4xl font-medium title-font mb-4 text-gray-900">

@@ -6,10 +6,12 @@ import { Link } from "react-router-dom";
 import { useSDK } from "@metamask/sdk-react";
 import { useState } from "react";
 import DropDown from "./DropDown";
+import { IoPersonCircleSharp } from "react-icons/io5";
 
 const Header = () => {
   const { sdk } = useSDK();
   const [account, setAccount] = useState("");
+  const [view, setView] = useState(false);
 
   const onClickMetaMask = async () => {
     try {
@@ -40,13 +42,29 @@ const Header = () => {
           <div className="pl-6 mr-2">
             {account ? (
               <div className="w-[170px] flex">
-                <span>
-                  {`${account.substring(0, 7)}...${account.substring(
-                    account.length - 5
-                  )}`}
-                </span>
-                <button className="ml-2" onClick={() => setAccount("")}>
-                  Logout
+                <button
+                  className="flex items-center"
+                  onClick={() => {
+                    setView(!view);
+                  }}
+                >
+                  <IoPersonCircleSharp className="w-[80px] h-[45px] pl-6" />
+                  {view ? "⌃" : "⌄"}
+                  {view && (
+                    <>
+                      <ul className="absolute mt-2 bg-slate-300 dark:bg-slate-600 top-28 p-4">
+                        <li className="pb-4">
+                          <Link to="/MyPage">마이페이지</Link>
+                        </li>
+                        <button
+                          className="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-50"
+                          onClick={() => setAccount("")}
+                        >
+                          로그아웃
+                        </button>
+                      </ul>
+                    </>
+                  )}
                 </button>
               </div>
             ) : (
