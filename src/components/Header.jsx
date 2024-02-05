@@ -7,6 +7,7 @@ import { useSDK } from "@metamask/sdk-react";
 import { useState } from "react";
 import DropDown from "./DropDown";
 import { IoPersonCircleSharp } from "react-icons/io5";
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
 const Header = () => {
   const { sdk } = useSDK();
@@ -49,10 +50,14 @@ const Header = () => {
                   }}
                 >
                   <IoPersonCircleSharp className="w-[80px] h-[45px] pl-6" />
-                  {view ? "⌃" : "⌄"}
+                  {view ? (
+                    <MdKeyboardArrowUp className="w-6 h-6" />
+                  ) : (
+                    <MdKeyboardArrowDown className="w-6 h-6" />
+                  )}
                   {view && (
                     <>
-                      <ul className="absolute mt-2 bg-slate-300 dark:bg-slate-600 top-28 p-4">
+                      <ul className="absolute mt-2 bg-slate-300 dark:bg-slate-600 top-28 p-4 rounded-xl">
                         <li className="pb-4">
                           <Link to="/MyPage">마이페이지</Link>
                         </li>

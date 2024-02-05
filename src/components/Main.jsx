@@ -8,7 +8,7 @@ const Main = () => {
           <h1 className="title-font sm:text-5xl text-3xl mb-4 font-thin text-gray-900">
             <div className="text-7xl text-blue-500 flex">
               <b>DAOM</b>
-              <div className="text-black">&nbsp;arket</div>
+              <div className="text-black dark:text-white">&nbsp;arket</div>
             </div>
             <br className="hidden lg:inline-block" />
             <b>NFT</b>와 <b>DAO</b>의 조화로운 만남
