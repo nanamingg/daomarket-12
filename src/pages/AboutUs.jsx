@@ -38,18 +38,14 @@ const AboutUs = () => {
                     <p className="mb-4">
                       역할역역할역할역할역할역할 할말할말할말할말할말
                     </p>
-                    <span className="inline-flex">
-                      <div className="text-gray-500">
-                        <div>
-                          <a
-                            href="https://github.com/parkliam"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <BsGithub className="text-xl text-black" />
-                          </a>
-                        </div>
-                      </div>
+                    <span className="inline-flex text-gray-500">
+                      <a
+                        href="https://github.com/parkliam"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <BsGithub className="text-xl text-black" />
+                      </a>
                     </span>
                   </div>
                 </div>

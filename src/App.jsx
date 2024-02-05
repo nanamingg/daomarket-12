@@ -9,7 +9,6 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import IntroduceDaoMarket from "./pages/IntroduceDaoMarket";
 import Vote from "./pages/Vote";
-import MyPage from "./pages/MyPage";
 
 const App = () => {
   return (
@@ -24,7 +23,6 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/IntroduceDaoMarket" element={<IntroduceDaoMarket />} />
           <Route path="/Vote" element={<Vote />} />
-          <Route path="/MyPage" element={<MyPage />} />
         </Routes>
       </Router>
     </ThemeProvider>
