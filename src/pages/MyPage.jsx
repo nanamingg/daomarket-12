@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 
-const Join = () => {
+const MyPage = () => {
   return (
     <div className="bg-darkMode">
       <Layout>
@@ -12,4 +12,4 @@ const Join = () => {
   );
 };
 
-export default Join;
+export default MyPage;
