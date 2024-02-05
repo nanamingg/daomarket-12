@@ -9,7 +9,7 @@ const Contact = () => {
       <Layout>
         {/* 개인프로젝트에서 문의사항이 딱히 의미가 있나 싶지만 진짜 사이트처럼 구색을 맞췄고, 문의사항을 입력하면 텔레그램 api를 사용해서 정말 연락을 받을 수 있게 제작 예정입니다. */}
         <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font relative">
-          <div className="flex">
+          <div className="flex pt-24">
             <div className="box border border-gray-300 p-4 py-8 rounded-md mx-16 w-3/12 h-6/12 flex flex-col items-center justify-center text-center">
               <img
                 src={consultationCall}

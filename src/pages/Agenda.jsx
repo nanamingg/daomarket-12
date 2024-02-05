@@ -4,7 +4,7 @@ const Agenda = () => {
   return (
     <div className="bg-darkMode">
       <Layout>
-        <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
+        <section className="flex min-h-screen pt-12 flex-col items-center justify-center text-gray-600 body-font">
           <div className="container px-5 py-8 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="sm:text-5xl text-4xl font-medium title-font mb-4 text-gray-900">
