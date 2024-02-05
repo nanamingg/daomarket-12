@@ -12,6 +12,9 @@ import Vote from "./pages/Vote";
 import MarketPlaceDetail from "./pages/MarketPlaceDetail";
 import MarketPlaceList from "./pages/MarketPlaceList";
 import MyPage from "./pages/MyPage";
+import MyInvest from "./pages/MyInvest";
+import MyAgenda from "./pages/MyAgenda";
+import MyProfile from "./pages/MyProfile";
 
 const App = () => {
   return (
@@ -29,6 +32,9 @@ const App = () => {
           <Route path="/MarketPlaceDetail" element={<MarketPlaceDetail />} />
           <Route path="/MarketPlaceList" element={<MarketPlaceList />} />
           <Route path="/MyPage" element={<MyPage />} />
+          <Route path="/MyInvest" element={<MyInvest />} />
+          <Route path="/MyAgenda" element={<MyAgenda />} />
+          <Route path="/MyProfile" element={<MyProfile />} />
         </Routes>
       </Router>
     </ThemeProvider>
