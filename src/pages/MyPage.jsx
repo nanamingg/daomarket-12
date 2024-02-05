@@ -8,7 +8,7 @@ const MyPage = () => {
   return (
     <div className="bg-darkMode">
       <Layout>
-        <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font text-5xl">
+        <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font text-5xl dark:text-white">
           마이페이지
           <div className="container px-5 py-24 mx-auto">
             <Link to="/MyInvest">

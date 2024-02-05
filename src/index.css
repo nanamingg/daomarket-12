@@ -62,15 +62,16 @@ p {
 }
 /* 여기까지 모두 다크모드 관련 CSS */
 
-/* dropdown 메뉴 */
-.submenu {
-  float: left;
-  position: absolute;
-  display: none;
+/* DropDown CSS */
+.mainmenu .submenu {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
-.mainmenu:hover > .submenu {
-  display: block;
+.mainmenu:hover .submenu {
+  opacity: 1;
+  visibility: visible;
 }
 
 .speech-bubble {
@@ -102,3 +103,4 @@ p {
 .dark .speech-bubble:after {
   border-bottom-color: #475569;
 }
+/* DropDown CSS */

@@ -78,7 +78,7 @@ const Header = () => {
                 className="flex items-center w-[170px]"
               >
                 <img src={Metamask} alt="Metamask" className="w-8 mr-2" />
-                <span>MetaMask Login</span>
+                <span>Sign in</span>
               </button>
             )}
           </div>
