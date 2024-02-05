@@ -30,7 +30,7 @@ const DropDown = () => {
           <FaFileCode className="mr-1" />
           &nbsp;안건
         </Link>
-        <ul className="text-center w-[84px] bg-slate-600 submenu speech-bubble">
+        <ul className="text-center w-[84px] submenu speech-bubble ">
           <li>
             <Link>123</Link>
           </li>
@@ -50,7 +50,7 @@ const DropDown = () => {
           <TbMessageCircle2Filled className="mr-1" />
           &nbsp;1:1 문의
         </Link>
-        <ul className="text-center w-[105px] bg-slate-600 submenu speech-bubble">
+        <ul className="text-center w-[105px] submenu speech-bubble">
           <li>
             <Link>123</Link>
           </li>
