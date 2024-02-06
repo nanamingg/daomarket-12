@@ -33,7 +33,7 @@ const MyPage = () => {
                   <img src={document} alt="document" className="mb-8 mr-2" />
                 </div>
                 <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                  <h2 className="text-gray-900 text-xl title-font text-xl font-medium mb-2">
+                  <h2 className="text-gray-900 text-xl title-font  font-medium mb-2">
                     나의 안건
                   </h2>
                   <p className="leading-relaxed text-base">
