@@ -137,7 +137,6 @@ const Agenda = () => {
 
 const Agenda = () = >{
   // 상태 변수 설정
-  // ... (이전 상태 변수와 동일)
 
   const [fundingAmount, setFundingAmount] = useState('');  // 모금 금액
   const [nftUrl, setNftUrl] = useState('');  // NFT URL
