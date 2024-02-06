@@ -1,5 +1,5 @@
 import { ThemeProvider } from "next-themes";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -17,12 +17,23 @@ import MyAgenda from "./pages/MyAgenda";
 import MyProfile from "./pages/MyProfile";
 
 const App = () => {
-  const [profileImage, setProfileImage] = useState(null);
+  const [profileImage, setProfileImage] = useState(
+    localStorage.getItem("profileImage") || null
+  );
 
   // 이미지 변경 핸들러
   const handleImageChange = (imageURL) => {
     setProfileImage(imageURL);
+    localStorage.setItem("profileImage", imageURL); // 이미지 URL을 로컬 스토리지에 저장
   };
+
+  useEffect(() => {
+    // 페이지 로드시 로컬 스토리지에서 이미지 가져오기
+    const storedImage = localStorage.getItem("profileImage");
+    if (storedImage) {
+      setProfileImage(storedImage);
+    }
+  }, []);
 
   return (
     <ThemeProvider attribute="class">

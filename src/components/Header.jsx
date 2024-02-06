@@ -52,9 +52,8 @@ const Header = ({ profileImage }) => {
                   <div className="ml-auto flex items-center">
                     <img
                       src={profileImage}
-                      alt="프로필 이미지"
+                      alt="Profile"
                       className="w-8 h-8 rounded-full cursor-pointer object-cover"
-                      style={{ maxWidth: "100%", maxHeight: "100%" }}
                     />
                   </div>
                   {/* 프로필 이미지만 표시 */}

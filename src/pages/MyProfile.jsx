@@ -5,7 +5,6 @@ import defaultProfileImage from "../images/img.png";
 const MyProfile = ({ onImageChange }) => {
   const [address, setAddress] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-
   const [profileImage, setProfileImage] = useState(
     localStorage.getItem("profileImage") || defaultProfileImage
   );
@@ -19,6 +18,8 @@ const MyProfile = ({ onImageChange }) => {
       const imageURL = reader.result;
       // 이미지 변경 함수 호출
       onImageChange(imageURL);
+      // 로컬 스토리지에 이미지 URL 저장
+      localStorage.setItem("profileImage", imageURL);
     };
 
     if (selectedImage) {
@@ -26,14 +27,11 @@ const MyProfile = ({ onImageChange }) => {
     }
   };
 
-  const handlePreview = (event) => {
-    const selectedImage = event.target.files[0];
-    if (selectedImage) {
-      const imageURL = URL.createObjectURL(selectedImage);
-      setPreviewImage(imageURL);
-    } else {
-      setPreviewImage(profileImage);
-    }
+  const handleImageDelete = () => {
+    setProfileImage(defaultProfileImage);
+    setPreviewImage(defaultProfileImage);
+    // 로컬 스토리지에서 이미지 URL 제거
+    localStorage.removeItem("profileImage");
   };
 
   useEffect(() => {
@@ -95,35 +93,38 @@ const MyProfile = ({ onImageChange }) => {
           {/* 목록 */}
           {/* 프로필 이미지 미리보기 */}
           <div className="container px-5 py-8 mx-auto flex flex-wrap">
-            {/* 프로필 이미지 미리보기 */}
+            <div className="mb-4 md:w-2/5 flex justify-center">
+              <img
+                src={previewImage}
+                alt="프로필 이미지 미리보기"
+                className="w-32 h-32 rounded-full mb-2 object-cover"
+                style={{ maxWidth: "100%", maxHeight: "100%" }}
+              />
+            </div>
             {/* 파일 선택, 이미지 변경 및 이미지 삭제 버튼 */}
-            <div className="container px-5 py-8 mx-auto flex flex-wrap">
-              <div className="mb-4 md:w-2/5 flex justify-center">
-                <img
-                  src={previewImage}
-                  alt="프로필 이미지 미리보기"
-                  className="w-32 h-32 rounded-full mb-2 object-cover "
-                  style={{ maxWidth: "100%", maxHeight: "100%" }}
-                />
-              </div>
-              <div className="flex items-center md:w-3/5">
-                <input
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => {
-                    handleChangeImage(e);
-                    handlePreview(e);
-                  }}
-                  id="profileImageInput"
-                  style={{ display: "none" }}
-                />
-                <label
-                  htmlFor="profileImageInput"
-                  className="cursor-pointer bg-slate-500 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded mr-2"
-                >
-                  이미지 선택
-                </label>
-              </div>
+            <div className="flex items-center md:w-3/5">
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => {
+                  handleChangeImage(e);
+                  setPreviewImage(URL.createObjectURL(e.target.files[0]));
+                }}
+                id="profileImageInput"
+                style={{ display: "none" }}
+              />
+              <label
+                htmlFor="profileImageInput"
+                className="cursor-pointer bg-slate-500 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded mr-2"
+              >
+                이미지 선택
+              </label>
+              <button
+                onClick={handleImageDelete}
+                className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+              >
+                이미지 삭제
+              </button>
             </div>
           </div>
           {/* 파일 선택, 이미지 변경 및 이미지 삭제 버튼 */}
