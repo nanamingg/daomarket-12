@@ -135,11 +135,6 @@ const Agenda = () => {
               </div>
             </div>
 
-
-            {/* ... (나머지 입력 필드 코드) ... */}
-            // ... (이전 코드와 동일)
-
-
 const Agenda = () = >{
   // 상태 변수 설정
   // ... (이전 상태 변수와 동일)
@@ -149,13 +144,11 @@ const Agenda = () = >{
   const [imageLink, setImageLink] = useState('');  // 이미지 링크
   const [duration, setDuration] = useState('');  // 기간
   const [description, setDescription] = useState('');  // 설명  
-  
-  // ... (이전 useEffect, connectWallet, submitProposal 코드와 동일)
+
 
   return (
     <div className="bg-darkMode">
       <Layout>
-        {/* ... (이전 코드와 동일) ... */}
         
         <div className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
           {/* NFT URL 입력 필드 */}
@@ -188,10 +181,6 @@ const Agenda = () = >{
             />
           </div>
         </div>
-
-        {/* ... (나머지 입력 필드와 코드) ... */}
-
-        {/* MetaMask 연결 버튼과 제출 버튼 코드는 이전과 동일 */}
 
       </Layout>
     </div>
