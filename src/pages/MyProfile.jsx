@@ -1,9 +1,40 @@
 import Layout from "../components/Layout";
 import React, { useEffect, useState } from "react";
+import defaultProfileImage from "../images/img.png";
 
-const MyProfile = () => {
+const MyProfile = ({ onImageChange }) => {
   const [address, setAddress] = useState("");
   const [showPopup, setShowPopup] = useState(false);
+
+  const [profileImage, setProfileImage] = useState(
+    localStorage.getItem("profileImage") || defaultProfileImage
+  );
+  const [previewImage, setPreviewImage] = useState(profileImage);
+
+  const handleChangeImage = (event) => {
+    const selectedImage = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onloadend = () => {
+      const imageURL = reader.result;
+      // 이미지 변경 함수 호출
+      onImageChange(imageURL);
+    };
+
+    if (selectedImage) {
+      reader.readAsDataURL(selectedImage);
+    }
+  };
+
+  const handlePreview = (event) => {
+    const selectedImage = event.target.files[0];
+    if (selectedImage) {
+      const imageURL = URL.createObjectURL(selectedImage);
+      setPreviewImage(imageURL);
+    } else {
+      setPreviewImage(profileImage);
+    }
+  };
 
   useEffect(() => {
     if (window.ethereum) {
@@ -62,6 +93,40 @@ const MyProfile = () => {
             </div>
           </div>
           {/* 목록 */}
+          {/* 프로필 이미지 미리보기 */}
+          <div className="container px-5 py-8 mx-auto flex flex-wrap">
+            {/* 프로필 이미지 미리보기 */}
+            {/* 파일 선택, 이미지 변경 및 이미지 삭제 버튼 */}
+            <div className="container px-5 py-8 mx-auto flex flex-wrap">
+              <div className="mb-4 md:w-2/5 flex justify-center">
+                <img
+                  src={previewImage}
+                  alt="프로필 이미지 미리보기"
+                  className="w-32 h-32 rounded-full mb-2 object-cover "
+                  style={{ maxWidth: "100%", maxHeight: "100%" }}
+                />
+              </div>
+              <div className="flex items-center md:w-3/5">
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => {
+                    handleChangeImage(e);
+                    handlePreview(e);
+                  }}
+                  id="profileImageInput"
+                  style={{ display: "none" }}
+                />
+                <label
+                  htmlFor="profileImageInput"
+                  className="cursor-pointer bg-slate-500 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded mr-2"
+                >
+                  이미지 선택
+                </label>
+              </div>
+            </div>
+          </div>
+          {/* 파일 선택, 이미지 변경 및 이미지 삭제 버튼 */}
         </section>
       </Layout>
     </div>

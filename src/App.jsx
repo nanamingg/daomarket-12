@@ -1,5 +1,5 @@
 import { ThemeProvider } from "next-themes";
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -17,10 +17,17 @@ import MyAgenda from "./pages/MyAgenda";
 import MyProfile from "./pages/MyProfile";
 
 const App = () => {
+  const [profileImage, setProfileImage] = useState(null);
+
+  // 이미지 변경 핸들러
+  const handleImageChange = (imageURL) => {
+    setProfileImage(imageURL);
+  };
+
   return (
     <ThemeProvider attribute="class">
       <Router>
-        <Header />
+        <Header profileImage={profileImage} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/AboutUs" element={<AboutUs />} />
@@ -34,7 +41,10 @@ const App = () => {
           <Route path="/MyPage" element={<MyPage />} />
           <Route path="/MyInvest" element={<MyInvest />} />
           <Route path="/MyAgenda" element={<MyAgenda />} />
-          <Route path="/MyProfile" element={<MyProfile />} />
+          <Route
+            path="/MyProfile"
+            element={<MyProfile onImageChange={handleImageChange} />}
+          />
         </Routes>
       </Router>
     </ThemeProvider>

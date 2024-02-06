@@ -6,10 +6,9 @@ import { Link } from "react-router-dom";
 import { useSDK } from "@metamask/sdk-react";
 import { useState } from "react";
 import DropDown from "./DropDown";
-import { IoPersonCircleSharp } from "react-icons/io5";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 
-const Header = () => {
+const Header = ({ profileImage }) => {
   const { sdk } = useSDK();
   const [account, setAccount] = useState("");
   const [view, setView] = useState(false);
@@ -49,7 +48,16 @@ const Header = () => {
                     setView(!view);
                   }}
                 >
-                  <IoPersonCircleSharp className="w-[80px] h-[45px] pl-6" />
+                  {/* 프로필 이미지만 표시 */}
+                  <div className="ml-auto flex items-center">
+                    <img
+                      src={profileImage}
+                      alt="프로필 이미지"
+                      className="w-8 h-8 rounded-full cursor-pointer object-cover"
+                      style={{ maxWidth: "100%", maxHeight: "100%" }}
+                    />
+                  </div>
+                  {/* 프로필 이미지만 표시 */}
                   {view ? (
                     <MdKeyboardArrowUp className="w-6 h-6" />
                   ) : (
