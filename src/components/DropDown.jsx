@@ -44,7 +44,7 @@ const DropDown = () => {
             <Link to="/Agenda">안건제출</Link>
           </li>
           <li>
-            <Link>NFT 판매</Link>
+            <Link to="/SaleNFT">NFT 판매</Link>
           </li>
           <li className="py-2">
             <Link>시세조회</Link>
@@ -65,13 +65,13 @@ const DropDown = () => {
         </Link>
         <ul className="text-center w-[140px] bg-white submenu speech-bubble p-4">
           <li>
-            <Link>자주 묻는 질문</Link>
+            <Link to="/FAQ">자주 묻는 질문</Link>
           </li>
           <li className="py-2">
-            <Link>1:1 문의</Link>
+            <Link to="/Contact">1:1 문의</Link>
           </li>
           <li>
-            <Link>문의 내역</Link>
+            <Link to="/MyContact">문의 내역</Link>
           </li>
           <li>
             <Link>?</Link>

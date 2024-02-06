@@ -15,6 +15,9 @@ import MyPage from "./pages/MyPage";
 import MyInvest from "./pages/MyInvest";
 import MyAgenda from "./pages/MyAgenda";
 import MyProfile from "./pages/MyProfile";
+import FAQ from "./pages/FAQ";
+import MyContact from "./pages/MyContact";
+import SaleNFT from "./pages/SaleNFT";
 
 const App = () => {
   const [profileImage, setProfileImage] = useState(
@@ -52,6 +55,9 @@ const App = () => {
           <Route path="/MyPage" element={<MyPage />} />
           <Route path="/MyInvest" element={<MyInvest />} />
           <Route path="/MyAgenda" element={<MyAgenda />} />
+          <Route path="FAQ" element={<FAQ />} />
+          <Route path="MyContact" element={<MyContact />} />
+          <Route path="SaleNFT" element={<SaleNFT />} />
           <Route
             path="/MyProfile"
             element={<MyProfile onImageChange={handleImageChange} />}

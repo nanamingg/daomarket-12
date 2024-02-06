@@ -71,7 +71,7 @@ const Agenda = () => {
           <div className="container px-5 py-8 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="sm:text-5xl text-4xl font-medium title-font mb-4 text-gray-900">
-                제안하고 싶은 안건이 있으신가요? (페이지 차후 개선 예정)
+                제안하고 싶은 안건이 있으신가요?
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-2xl">
                 아래 양식을 통해 제안서를 작성하고 제출해 주세요.
