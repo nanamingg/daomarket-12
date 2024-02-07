@@ -240,45 +240,45 @@ const FAQ = () => {
                 <div className="md:flex-grow">
                   {/* 0 */}
                   <h2
-                    onClick={() => toggleAnswer(8)}
+                    onClick={() => toggleAnswer(12)}
                     className="text-xl font-medium text-gray-900 title-font mb-2 cursor-pointer"
                   >
                     모금된 자산은 어떻게 보관되나요?
                   </h2>
-                  {selectedFAQ === 8 && (
+                  {selectedFAQ === 12 && (
                     <div className="mt-4 ml-1">답변 완</div>
                   )}
                   {/* 0 */}
                   {/* 1 */}
                   <h2
-                    onClick={() => toggleAnswer(9)}
+                    onClick={() => toggleAnswer(13)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뚜
                   </h2>
-                  {selectedFAQ === 9 && (
+                  {selectedFAQ === 13 && (
                     <div className="mt-4 ml-1">답변 뚜</div>
                   )}
                   {/* 1 */}
                   {/* 2 */}
                   <h2
-                    onClick={() => toggleAnswer(10)}
+                    onClick={() => toggleAnswer(14)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뜨리
                   </h2>
-                  {selectedFAQ === 10 && (
+                  {selectedFAQ === 14 && (
                     <div className="mt-4 ml-1">답변 뜨리</div>
                   )}
                   {/* 2 */}
                   {/* 3 */}
                   <h2
-                    onClick={() => toggleAnswer(11)}
+                    onClick={() => toggleAnswer(15)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뽀
                   </h2>
-                  {selectedFAQ === 11 && (
+                  {selectedFAQ === 15 && (
                     <div className="mt-4 ml-1">답변 뽀</div>
                   )}
                   {/* 3 */}
@@ -293,45 +293,45 @@ const FAQ = () => {
                 <div className="md:flex-grow">
                   {/* 0 */}
                   <h2
-                    onClick={() => toggleAnswer(8)}
+                    onClick={() => toggleAnswer(16)}
                     className="text-xl font-medium text-gray-900 title-font mb-2 cursor-pointer"
                   >
                     모금된 자산은 어떻게 보관되나요?
                   </h2>
-                  {selectedFAQ === 8 && (
+                  {selectedFAQ === 16 && (
                     <div className="mt-4 ml-1">답변 완</div>
                   )}
                   {/* 0 */}
                   {/* 1 */}
                   <h2
-                    onClick={() => toggleAnswer(9)}
+                    onClick={() => toggleAnswer(17)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뚜
                   </h2>
-                  {selectedFAQ === 9 && (
+                  {selectedFAQ === 17 && (
                     <div className="mt-4 ml-1">답변 뚜</div>
                   )}
                   {/* 1 */}
                   {/* 2 */}
                   <h2
-                    onClick={() => toggleAnswer(10)}
+                    onClick={() => toggleAnswer(18)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뜨리
                   </h2>
-                  {selectedFAQ === 10 && (
+                  {selectedFAQ === 18 && (
                     <div className="mt-4 ml-1">답변 뜨리</div>
                   )}
                   {/* 2 */}
                   {/* 3 */}
                   <h2
-                    onClick={() => toggleAnswer(11)}
+                    onClick={() => toggleAnswer(19)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뽀
                   </h2>
-                  {selectedFAQ === 11 && (
+                  {selectedFAQ === 19 && (
                     <div className="mt-4 ml-1">답변 뽀</div>
                   )}
                   {/* 3 */}
@@ -346,45 +346,45 @@ const FAQ = () => {
                 <div className="md:flex-grow">
                   {/* 0 */}
                   <h2
-                    onClick={() => toggleAnswer(8)}
+                    onClick={() => toggleAnswer(20)}
                     className="text-xl font-medium text-gray-900 title-font mb-2 cursor-pointer"
                   >
                     모금된 자산은 어떻게 보관되나요?
                   </h2>
-                  {selectedFAQ === 8 && (
+                  {selectedFAQ === 20 && (
                     <div className="mt-4 ml-1">답변 완</div>
                   )}
                   {/* 0 */}
                   {/* 1 */}
                   <h2
-                    onClick={() => toggleAnswer(9)}
+                    onClick={() => toggleAnswer(21)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뚜
                   </h2>
-                  {selectedFAQ === 9 && (
+                  {selectedFAQ === 21 && (
                     <div className="mt-4 ml-1">답변 뚜</div>
                   )}
                   {/* 1 */}
                   {/* 2 */}
                   <h2
-                    onClick={() => toggleAnswer(10)}
+                    onClick={() => toggleAnswer(22)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뜨리
                   </h2>
-                  {selectedFAQ === 10 && (
+                  {selectedFAQ === 22 && (
                     <div className="mt-4 ml-1">답변 뜨리</div>
                   )}
                   {/* 2 */}
                   {/* 3 */}
                   <h2
-                    onClick={() => toggleAnswer(11)}
+                    onClick={() => toggleAnswer(23)}
                     className="text-xl font-medium text-gray-900 title-font mt-4 cursor-pointer"
                   >
                     질문 뽀
                   </h2>
-                  {selectedFAQ === 11 && (
+                  {selectedFAQ === 23 && (
                     <div className="mt-4 ml-1">답변 뽀</div>
                   )}
                   {/* 3 */}
