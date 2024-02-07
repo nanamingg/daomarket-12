@@ -19,6 +19,9 @@ import FAQ from "./pages/FAQ";
 import MyContact from "./pages/MyContact";
 import SaleNFT from "./pages/SaleNFT";
 import defaultProfileImage from "./images/img.png";
+// 멀티시그맛보기 나중에 지우기
+import MultiSig from "./pages/MultiSig";
+// 멀티시그맛보기 나중에 지우기
 
 const App = () => {
   const [profileImage, setProfileImage] = useState(
@@ -64,6 +67,9 @@ const App = () => {
           <Route path="FAQ" element={<FAQ />} />
           <Route path="MyContact" element={<MyContact />} />
           <Route path="SaleNFT" element={<SaleNFT />} />
+          {/*멀티시그맛보기 나중에 지우기*/}
+          <Route path="MultiSig" element={<MultiSig />} />
+          {/*멀티시그맛보기 나중에 지우기*/}
           <Route
             path="/MyProfile"
             element={
