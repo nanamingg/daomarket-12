@@ -18,14 +18,20 @@ import MyProfile from "./pages/MyProfile";
 import FAQ from "./pages/FAQ";
 import MyContact from "./pages/MyContact";
 import SaleNFT from "./pages/SaleNFT";
+import defaultProfileImage from "./images/img.png";
 
 const App = () => {
   const [profileImage, setProfileImage] = useState(
-    localStorage.getItem("profileImage") || null
+    localStorage.getItem("profileImage") || defaultProfileImage
   );
 
   // 이미지 변경 핸들러
   const handleImageChange = (imageURL) => {
+    setProfileImage(imageURL);
+    localStorage.setItem("profileImage", imageURL); // 이미지 URL을 로컬 스토리지에 저장
+  };
+
+  const handleDeleteImage = (imageURL) => {
     setProfileImage(imageURL);
     localStorage.setItem("profileImage", imageURL); // 이미지 URL을 로컬 스토리지에 저장
   };
@@ -60,7 +66,12 @@ const App = () => {
           <Route path="SaleNFT" element={<SaleNFT />} />
           <Route
             path="/MyProfile"
-            element={<MyProfile onImageChange={handleImageChange} />}
+            element={
+              <MyProfile
+                onImageChange={handleImageChange}
+                onDeleteImage={handleDeleteImage}
+              />
+            }
           />
         </Routes>
       </Router>

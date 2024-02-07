@@ -2,7 +2,7 @@ import Layout from "../components/Layout";
 import React, { useEffect, useState } from "react";
 import defaultProfileImage from "../images/img.png";
 
-const MyProfile = ({ onImageChange }) => {
+const MyProfile = ({ onImageChange, onDeleteImage }) => {
   const [address, setAddress] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [profileImage, setProfileImage] = useState(
@@ -32,6 +32,7 @@ const MyProfile = ({ onImageChange }) => {
     setPreviewImage(defaultProfileImage);
     // 로컬 스토리지에서 이미지 URL 제거
     localStorage.removeItem("profileImage");
+    onDeleteImage(defaultProfileImage);
   };
 
   useEffect(() => {

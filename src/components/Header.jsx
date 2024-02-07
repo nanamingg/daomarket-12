@@ -7,6 +7,7 @@ import { useSDK } from "@metamask/sdk-react";
 import { useState } from "react";
 import DropDown from "./DropDown";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
+import defaultProfileImage from "../images/img.png";
 
 const Header = ({ profileImage }) => {
   const { sdk } = useSDK();
@@ -51,7 +52,7 @@ const Header = ({ profileImage }) => {
                   {/* 프로필 이미지만 표시 */}
                   <div className="ml-auto flex items-center">
                     <img
-                      src={profileImage}
+                      src={profileImage || defaultProfileImage}
                       alt="Profile"
                       className="w-8 h-8 rounded-full cursor-pointer object-cover"
                     />
