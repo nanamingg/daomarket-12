@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import React, { useState, useEffect } from "react";
 import Web3 from "web3";
 import proposal_ABI from "../abis/proposal_ABI";
+import { useNavigate } from "react-router-dom";
 import { PROPOSAL_CONTRACT } from "../abis/contractsaddress.js"; // 스마트 계약 ABI 파일 불러오기
 
 const Agenda = () => {
@@ -14,6 +15,7 @@ const Agenda = () => {
   const [fundingGoal, setFundingGoal] = useState("");
   const [durationInDays, setDurationInDays] = useState(""); // 수정된 부분: durationInDays 상태 추가
   const [description, setDescription] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const loadWeb3 = async () => {
@@ -48,7 +50,7 @@ const Agenda = () => {
 
   const handleProposalSubmit = async () => {
     try {
-      await contract.methods
+      const response = await contract.methods
         .createProposalAndStartFunding(
           title,
           nftLink,
@@ -58,6 +60,9 @@ const Agenda = () => {
           description
         )
         .send({ from: accounts[0] });
+      // console.log(response);
+      navigate("/");
+      // 경로지정
       console.log("안건 제안 및 펀딩 시작 완료");
     } catch (error) {
       console.error("안건 제안 및 펀딩 시작 실패:", error);
@@ -140,7 +145,7 @@ const Agenda = () => {
                   id="duration-in-days"
                   name="duration-in-days"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  placeholder="일 단위로 입력해 주세요."
+                  placeholder="일 단위로 숫자만 입력해 주세요."
                   onChange={(e) => setDurationInDays(e.target.value)} // 수정된 부분: durationInDays 상태 업데이트
                 />
               </div>
