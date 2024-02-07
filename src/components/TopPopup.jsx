@@ -3,6 +3,7 @@
 
 import { useEffect, useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const TopPopup = () => {
@@ -27,19 +28,18 @@ const TopPopup = () => {
           isClose && "hidden"
         }`}
       >
-        <div className="container flex justify-between items-center ">
-          <div className="flex items-center justify-center mt-1 w-full">
-            <span className="font-semibold text-center">
-              Dao Market에서 진행 중인 Dao 바로가기 (클릭하면 이동하게 수정
-              예정, 로컬스토리지로 팝업을 한번 닫으면 다시 보이지 않도록 수정
-              완료)
-            </span>
-          </div>
+        <div className="container flex justify-center items-center">
+          <Link to="/MarketPlaceList">
+            <div className="flex items-center justify-center ml-56 mt-1 w-full text-center font-semibold">
+              팝업을 클릭하여 DAOM에서 현재 펀딩이 진행 중인 물건들을 확인해
+              보세요! (이 상단팝업 뺄까요..? 고민 중,,,) -정준혁
+            </div>
+          </Link>
           <button
             className="w-5 absolute right-0 mr-[200px]"
             onClick={onClickClose}
           >
-            <IoCloseSharp className="mt-1" />
+            <IoCloseSharp className="mt-1 hover:scale-125 duration-300 text-2xl" />
           </button>
         </div>
       </div>
@@ -48,18 +48,3 @@ const TopPopup = () => {
 };
 
 export default TopPopup;
-
-//   return (
-//     <div className={`h-[306px] ${isClose ? "hidden" : ""}`}>
-//       <div className="container flex justify-between">
-//         <Link to="/sale">
-//           <div className="flex items-center">
-//             <img src={ad1} alt="top_banner" className="rounded-b-2xl" />
-//           </div>
-//         </Link>
-//         <button className="w-10 h-10" onClick={onClickClose}>
-//           <IoCloseSharp className="hover:scale-125 duration-300 text-3xl" />
-//         </button>
-//       </div>
-//     </div>
-//   );
