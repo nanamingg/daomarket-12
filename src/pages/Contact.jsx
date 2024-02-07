@@ -1,9 +1,29 @@
+import React, { useState } from "react";
+import axios from "axios";
 import Layout from "../components/Layout";
 import consultationCall from "../images/consultationCall.png";
 import consultationChat from "../images/consultationChat.png";
 import consultationOnline from "../images/consultationOnline.png";
 
 const Contact = () => {
+  const [msg, setMsg] = useState("");
+
+  // 텔레그램 관련 api인데 원래 .env 처리해야하지만 그냥 놔뒀습니다.
+  const sendMsg = async () => {
+    try {
+      await axios({
+        method: "post",
+        url: "https://api.telegram.org/bot6327170721:AAHe1OAIuyXTY-8dmNKRFnPrmrb2Tk0xKDg/sendMessage",
+        data: {
+          chat_id: "-1002138511749",
+          text: msg,
+        },
+      });
+    } catch (error) {
+      console.error("Send Again :", error);
+    }
+  };
+
   return (
     <div className="bg-darkMode">
       <Layout>
@@ -61,59 +81,29 @@ const Contact = () => {
                 아래의 양식을 작성해 주시면 빠르게 답변드리겠습니다.
               </div>
             </div>
-            <div className="lg:w-1/2 md:w-2/3 mx-auto mt-12">
-              <div className="flex flex-wrap -m-2">
-                <div className="p-2 w-1/2">
-                  <div className="relative">
-                    <label
-                      htmlFor="name"
-                      className="leading-7 text-sm text-gray-600"
-                    >
-                      성함
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                  </div>
-                </div>
-                <div className="p-2 w-1/2">
-                  <div className="relative">
-                    <label
-                      htmlFor="email"
-                      className="leading-7 text-sm text-gray-600"
-                    >
-                      연락 받으실 이메일
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className="p-2 w-full">
               <div className="relative">
                 <label
                   htmlFor="message"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-10 text-lg text-gray-600"
                 >
-                  하실 말씀
+                  문의하실 내용을 아래 양식에 맞춰 작성해 주세요.
                 </label>
                 <textarea
                   id="message"
                   name="message"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  value={msg}
+                  onChange={(e) => setMsg(e.target.value)}
+                  placeholder="성함 : &#13;&#10;이메일 :  &#13;&#10;메타마스크 주소 :  &#13;&#10;문의내용 :"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-40 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 ></textarea>
               </div>
             </div>
             <div className="p-2 w-full">
-              <button className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
+              <button
+                onClick={sendMsg}
+                className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg"
+              >
                 제출
               </button>
             </div>
