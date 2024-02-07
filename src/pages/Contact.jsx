@@ -108,11 +108,13 @@ const Contact = () => {
               </button>
             </div>
             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-              <div className="text-blue-500">daomarket4@project.com</div>
+              <a href="mailto:WeAreSorry@ItsFake.com" className="text-blue-500">
+                teamdaom@daom.com
+              </a>
               <div className="leading-normal my-5">
                 서울시 중구 세종대로 110
                 <br />
-                101호, DaoMarket
+                101호, DAOM
               </div>
               <span className="inline-flex">
                 <div className="text-gray-500"></div>
