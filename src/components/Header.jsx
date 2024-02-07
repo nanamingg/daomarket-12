@@ -43,7 +43,7 @@ const Header = ({ profileImage }) => {
           <div className="pl-6 mr-2">
             {account ? (
               <div className="w-[170px] flex">
-                <button
+                <ul
                   className="flex items-center"
                   onClick={() => {
                     setView(!view);
@@ -59,9 +59,9 @@ const Header = ({ profileImage }) => {
                   </div>
                   {/* 프로필 이미지만 표시 */}
                   {view ? (
-                    <MdKeyboardArrowUp className="w-6 h-6" />
+                    <MdKeyboardArrowUp className="w-6 h-6 hover:cursor-pointer" />
                   ) : (
-                    <MdKeyboardArrowDown className="w-6 h-6" />
+                    <MdKeyboardArrowDown className="w-6 h-6 hover:cursor-pointer" />
                   )}
                   {view && (
                     <>
@@ -78,7 +78,7 @@ const Header = ({ profileImage }) => {
                       </ul>
                     </>
                   )}
-                </button>
+                </ul>
               </div>
             ) : (
               <button
