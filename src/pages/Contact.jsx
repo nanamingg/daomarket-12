@@ -62,12 +62,16 @@ const Contact = () => {
                 className="mx-28 mt-2"
               />
               <div className="text-xl font-semibold mt-8">
-                카카오톡 채팅상담
+                텔레그램 채팅상담
               </div>
               <br />
               평일 오전 10시 ~ 오후 5시
-              <br />
-              ID : @daom
+              <a
+                href="https://t.me/+T4xzw0_Cblc5MDA1"
+                className="text-blue-500"
+              >
+                채팅상담 바로가기
+              </a>
             </div>
           </div>
           <div className="container px-5 py-24 mx-auto">
