@@ -81,30 +81,32 @@ const Agenda = () => {
               <div className="relative flex-grow w-full">
                 <label
                   htmlFor="title"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-10 text-md text-gray-600"
                 >
-                  구매를 희망하시는 NFT url 링크
+                  구매를 희망하시는 NFT
                 </label>
                 <input
                   type="text"
                   id="NFTURL"
                   name="NFTURL"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="URL 주소를 입력해 주세요."
                   onChange={(e) => setNftLink(e.target.value)}
                 />
               </div>
               <div className="relative flex-grow w-full">
                 <label
                   htmlFor="content"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-10 text-md text-gray-600"
                 >
-                  NFT 이미지 링크
+                  NFT 이미지
                 </label>
                 <input
                   type="text"
                   id="NFTImageURL"
                   name="NFTImageURL"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="URL 주소를 입력해 주세요."
                   onChange={(e) => setImageLink(e.target.value)}
                 />
               </div>
@@ -113,30 +115,32 @@ const Agenda = () => {
               <div className="relative flex-grow w-full">
                 <label
                   htmlFor="title"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-10 text-md text-gray-600"
                 >
-                  희망하는 모금 금액 (ETH 단위)
+                  희망하는 모금 금액
                 </label>
                 <input
                   type="text"
                   id="funding-goal"
                   name="funding-goal"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="ETH 단위로 숫자만 입력해 주세요."
                   onChange={(e) => setFundingGoal(e.target.value)}
                 />
               </div>
               <div className="relative flex-grow w-full">
                 <label
                   htmlFor="content"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-10 text-md text-gray-600"
                 >
-                  펀딩 기간 (일 단위)
+                  펀딩 기간
                 </label>
                 <input
                   type="text"
                   id="duration-in-days"
                   name="duration-in-days"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="일 단위로 입력해 주세요."
                   onChange={(e) => setDurationInDays(e.target.value)} // 수정된 부분: durationInDays 상태 업데이트
                 />
               </div>
@@ -145,7 +149,7 @@ const Agenda = () => {
               <div className="relative flex-grow w-full">
                 <label
                   htmlFor="title"
-                  className="leading-7 text-sm text-gray-600"
+                  className="leading-10 text-md text-gray-600"
                 >
                   안건 내용
                 </label>
