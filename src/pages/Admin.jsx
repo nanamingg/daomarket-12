@@ -1,7 +1,46 @@
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
+import Web3 from "web3";
+
+async function getAccount() {
+  if (window.ethereum) {
+    const web3 = new Web3(window.ethereum);
+    try {
+      await window.ethereum.enable();
+      const accounts = await web3.eth.getAccounts();
+      return accounts[0];
+    } catch (error) {
+      console.error("YOU ARE NOT ADMIN!");
+    }
+  } else if (window.web3) {
+    const web3 = new Web3(window.web3.currentProvider);
+    const accounts = await web3.eth.getAccounts();
+    return accounts[0];
+  } else {
+    console.log("USE CHROME! USE METAMASK!");
+  }
+}
 
 const Admin = () => {
+  const navigate = useNavigate();
+
+  // 보안 기능입니다. 관리자 계정이 아니여도 주소창에 /admin을 입력하면 들어갈 수 있기 때문에 아래 주소가 아니면 바로 홈으로 보냅니다. 아래까지 입력해야 관리자 페이지에 접속이 가능합니다.
+  // 프로젝트 제출 전 .env 처리 예정
+  useEffect(() => {
+    getAccount().then((account) => {
+      if (
+        account !== "0xe3cd9fC292B724095874522026Fb68932329296C" &&
+        account !== "0xeffc9eaf0cb26b4ca0614ea99aca0908ca468fb3" &&
+        account !== "메타마스크 주소 입력" &&
+        account !== "메타마스크 주소 입력" &&
+        account !== "메타마스크 주소 입력"
+      ) {
+        navigate("/");
+      }
+    });
+  }, []);
+
   return (
     <div className="bg-darkMode">
       <Layout>

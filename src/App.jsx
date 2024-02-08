@@ -98,3 +98,8 @@ export default App;
 
 // warning이 여러개 뜬다면 최상위 위치에 .env 생성 후 아래 코드 주석 풀고 입력하기
 // GENERATE_SOURCEMAP=false
+
+// 제출 전에 .env 처리해야할 것들
+// 1. Contact.jsx 텔레그램 API
+// 2. Header.jsx 관리자 계정 주소
+// 3. Admin.jsx 관리자 계정 주소
