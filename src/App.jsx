@@ -22,6 +22,7 @@ import defaultProfileImage from "./images/img.png";
 import SuccessAgenda from "./pages/SuccessAgenda";
 // 멀티시그맛보기 나중에 지우기
 import MultiSig from "./pages/MultiSig";
+import Admin from "./pages/Admin";
 // 멀티시그맛보기 나중에 지우기
 
 const App = () => {
@@ -72,6 +73,7 @@ const App = () => {
           <Route path="MyContact" element={<MyContact />} />
           <Route path="/SuccessAgenda" element={<SuccessAgenda />} />
           <Route path="SaleNFT" element={<SaleNFT />} />
+          <Route path="Admin" element={<Admin />} />
           {/*멀티시그맛보기 나중에 지우기*/}
           <Route path="MultiSig" element={<MultiSig />} />
           {/*멀티시그맛보기 나중에 지우기*/}
