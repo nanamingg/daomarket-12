@@ -6,7 +6,7 @@ const PundingPlaceList = () => {
     <div className="bg-darkMode">
       <Layout>
         <section className="flex min-h-screen flex-col items-center justify-center text-gray-600 body-font">
-          첫 번째 이미지만 클릭했을 때 디테일 페이지로 이동
+          각 이미지 클릭시 상세 페이지로 이동
           <PundingList />
         </section>
       </Layout>

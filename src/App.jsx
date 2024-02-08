@@ -60,7 +60,10 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/IntroduceDaoMarket" element={<IntroduceDaoMarket />} />
           <Route path="/Vote" element={<Vote />} />
-          <Route path="/PundingPlaceDetail" element={<PundingPlaceDetail />} />
+          <Route
+            path="/proposal/:proposalId"
+            element={<PundingPlaceDetail />}
+          />
           <Route path="/PundingPlaceList" element={<PundingPlaceList />} />
           <Route path="/MyPage" element={<MyPage />} />
           <Route path="/MyInvest" element={<MyInvest />} />

@@ -61,7 +61,7 @@ const Agenda = () => {
         )
         .send({ from: accounts[0] });
       // console.log(response);
-      navigate("/");
+      navigate("/PundingPlaceList");
       // 경로지정
       console.log("안건 제안 및 펀딩 시작 완료");
     } catch (error) {

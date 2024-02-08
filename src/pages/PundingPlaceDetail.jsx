@@ -1,41 +1,105 @@
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import Web3 from "web3";
+import proposal_ABI from "../abis/proposal_ABI";
 import Layout from "../components/Layout";
-import junhyukjung from "../images/junhyukjung.png";
+import { PROPOSAL_CONTRACT } from "../abis/contractsaddress.js";
+import { IoIosArrowBack } from "react-icons/io";
 
-const PundingPlaceDetail = () => {
+const ProposalDetail = () => {
+  const { proposalId } = useParams();
+  const [web3, setWeb3] = useState(null);
+  const [contract, setContract] = useState(null);
+  const [proposal, setProposal] = useState(null);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const loadWeb3 = async () => {
+      if (window.ethereum) {
+        const web3Instance = new Web3(window.ethereum);
+        setWeb3(web3Instance);
+      } else {
+        console.error("MetaMask가 설치되어 있지 않습니다.");
+      }
+    };
+    loadWeb3();
+  }, []);
+
+  useEffect(() => {
+    if (web3) {
+      const contractInstance = new web3.eth.Contract(
+        proposal_ABI,
+        PROPOSAL_CONTRACT
+      );
+      setContract(contractInstance);
+    }
+  }, [web3]);
+
+  useEffect(() => {
+    const fetchProposal = async () => {
+      try {
+        if (!contract) return;
+
+        const proposal = await contract.methods
+          .getMyProposal(proposalId)
+          .call();
+        setProposal(proposal);
+      } catch (error) {
+        console.error("안건 정보를 불러오는 중 오류 발생:", error);
+      }
+    };
+
+    fetchProposal();
+  }, [contract, proposalId]);
+
+  if (!proposal) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="bg-darkMode">
       <Layout>
         <section className="flex min-h-screen flex-col text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto">
+            <button
+              className="absolute top-48 left-24 hover:text-gray-500"
+              onClick={() => navigate(-1)}
+            >
+              <IoIosArrowBack className="text-4xl" />
+            </button>
             <div className="lg:w-4/5 mx-auto flex flex-wrap">
               <img
-                src={junhyukjung}
-                alt="junhyukjung"
+                src={proposal.imageLink}
+                alt="NFT 이미지"
                 className=""
                 style={{ width: "530px", height: "530px" }}
               />
-              <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                <h2 className="text-sm title-font text-gray-500 tracking-widest">
-                  제품 브랜드
-                </h2>
-                <h1 className="text-gray-900 text-3xl title-font font-medium mb-5">
-                  제품명
+              <div className="lg:w-1/2 w-full pl-12  mt-6 lg:mt-0">
+                <h1 className="text-gray-900 text-6xl title-font font-medium mb-5">
+                  {proposal.title}
                 </h1>
-                <p className="leading-relaxed mb-4">
-                  이 헌법중 공무원의 임기 또는 중임제한에 관한 규정은 이 헌법에
-                  의하여 그 공무원이 최초로 선출 또는 임명된 때로부터 적용한다.
-                  제2항의 재판관중 3인은 국회에서 선출하는 자를, 3인은
-                  대법원장이 지명하는 자를 임명한다. 재산권의 행사는 공공복리에
-                  적합하도록 하여야 한다. 대통령은 법률안의 일부에 대하여 또는
-                  법률안을 수정하여 재의를 요구할 수 없다. 공개하지 아니한
-                  회의내용의 공표에 관하여는 법률이 정하는 바에 의한다.
+                <p className="leading-relaxed mb-4 text-3xl h-52 break-words line-clamp-4">
+                  설명 : {proposal.description}
                 </p>
-                <span className="title-font font-medium text-2xl text-gray-900 flex">
-                  목표 금액
+                <span className="title-font font-medium text-2xl text-gray-900 dark:text-white flex mb-4">
+                  목표 금액: &nbsp; {proposal.fundingGoal.toString()} ETH
                 </span>
-                &nbsp;10 ETH
+                <div className="text-xl">
+                  <p className="mb-2">
+                    펀딩 시작 시간:{" "}
+                    {new Date(
+                      Number(proposal.startTime) * 1000
+                    ).toLocaleString()}
+                  </p>
+                  <p>
+                    펀딩 종료 시간:{" "}
+                    {new Date(Number(proposal.endTime) * 1000).toLocaleString()}
+                  </p>
+                </div>
+
                 <div className="flex items-center mt-4">
-                  <span className="mr-3 mt-6">진행율: &nbsp;</span>
+                  <span className="w-40 mr-3 mt-6 text-lg">진행율: &nbsp;</span>
                   <div className="bg-gray-300 w-full rounded-full">
                     <div
                       className="bg-blue-500 text-xs leading-none py-1 text-center text-white rounded-full"
@@ -44,8 +108,14 @@ const PundingPlaceDetail = () => {
                       50%
                     </div>
                   </div>
+                  <div className="bg-gray-300 w-full rounded-full"></div>
                 </div>
-                <button class="flex ml-auto text-white bg-blue-500 border-0 mt-28 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">
+                <button
+                  className="flex ml-auto text-white bg-blue-500 border-0 mt-12 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded"
+                  onClick={() => {
+                    // 참여 로직 추가
+                  }}
+                >
                   참여
                 </button>
               </div>
@@ -57,4 +127,4 @@ const PundingPlaceDetail = () => {
   );
 };
 
-export default PundingPlaceDetail;
+export default ProposalDetail;
