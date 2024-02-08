@@ -88,6 +88,24 @@ const Agenda = () => {
                   htmlFor="title"
                   className="leading-10 text-md text-gray-600"
                 >
+                  안건 제목
+                </label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  placeholder="안건 제목을 입력해 주세요."
+                  onChange={(e) => setTitle(e.target.value)}
+                />
+              </div>
+            </div>
+            <div className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end mt-4">
+              <div className="relative flex-grow w-full">
+                <label
+                  htmlFor="title"
+                  className="leading-10 text-md text-gray-600"
+                >
                   구매를 희망하시는 NFT
                 </label>
                 <input
