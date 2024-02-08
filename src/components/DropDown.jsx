@@ -1,6 +1,7 @@
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import { FaHome, FaStore } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { FaVoteYea } from "react-icons/fa";
 
 const DropDown = () => {
   return (
@@ -41,12 +42,9 @@ const DropDown = () => {
             <Link to="/MarketPlaceList">마켓플레이스</Link>
           </li>
           <li className="py-2">
-            <Link to="/Agenda">안건제출</Link>
-          </li>
-          <li>
             <Link to="/SaleNFT">NFT 판매</Link>
           </li>
-          <li className="py-2">
+          <li>
             <Link>시세조회</Link>
           </li>
           <li>
@@ -55,6 +53,24 @@ const DropDown = () => {
         </ul>
       </li>
       {/* 참여 */}
+      <li className="mainmenu">
+        <Link
+          to="/Agenda"
+          className="mr-8 hover:text-gray-900 flex items-center pl-4"
+        >
+          <FaVoteYea className="mr-1" />
+          &nbsp;안건
+        </Link>
+        <ul className="text-center w-[118px] bg-white submenu speech-bubble p-4">
+          <li>
+            <Link to="/Agenda">안건제출</Link>
+          </li>
+          <li className="py-2">
+            <Link to="/SuccessAgenda">펀딩된 안건</Link>
+          </li>
+          <li>?</li>
+        </ul>
+      </li>
       <li className=" mainmenu">
         <Link
           to="/Contact"

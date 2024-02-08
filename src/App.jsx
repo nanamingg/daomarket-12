@@ -19,6 +19,7 @@ import FAQ from "./pages/FAQ";
 import MyContact from "./pages/MyContact";
 import SaleNFT from "./pages/SaleNFT";
 import defaultProfileImage from "./images/img.png";
+import SuccessAgenda from "./pages/SuccessAgenda";
 // 멀티시그맛보기 나중에 지우기
 import MultiSig from "./pages/MultiSig";
 // 멀티시그맛보기 나중에 지우기
@@ -66,6 +67,7 @@ const App = () => {
           <Route path="/MyAgenda" element={<MyAgenda />} />
           <Route path="FAQ" element={<FAQ />} />
           <Route path="MyContact" element={<MyContact />} />
+          <Route path="/SuccessAgenda" element={<SuccessAgenda />} />
           <Route path="SaleNFT" element={<SaleNFT />} />
           {/*멀티시그맛보기 나중에 지우기*/}
           <Route path="MultiSig" element={<MultiSig />} />
