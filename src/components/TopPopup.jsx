@@ -29,7 +29,7 @@ const TopPopup = () => {
         }`}
       >
         <div className="container flex justify-center items-center">
-          <Link to="/MarketPlaceList">
+          <Link to="/PundingPlaceList">
             <div className="flex items-center justify-center ml-56 mt-1 w-full text-center font-semibold">
               팝업을 클릭하여 DAOM에서 현재 펀딩이 진행 중인 물건들을 확인해
               보세요! (이 상단팝업 뺄까요..? 고민 중,,,) -정준혁

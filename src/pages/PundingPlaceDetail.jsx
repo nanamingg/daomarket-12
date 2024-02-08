@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import junhyukjung from "../images/junhyukjung.png";
 
-const MarketPlaceDetail = () => {
+const PundingPlaceDetail = () => {
   return (
     <div className="bg-darkMode">
       <Layout>
@@ -57,4 +57,4 @@ const MarketPlaceDetail = () => {
   );
 };
 
-export default MarketPlaceDetail;
+export default PundingPlaceDetail;

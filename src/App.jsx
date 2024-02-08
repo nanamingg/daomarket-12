@@ -9,8 +9,8 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import IntroduceDaoMarket from "./pages/IntroduceDaoMarket";
 import Vote from "./pages/Vote";
-import MarketPlaceDetail from "./pages/MarketPlaceDetail";
-import MarketPlaceList from "./pages/MarketPlaceList";
+import PundingPlaceDetail from "./pages/PundingPlaceDetail";
+import PundingPlaceList from "./pages/PundingPlaceList";
 import MyPage from "./pages/MyPage";
 import MyInvest from "./pages/MyInvest";
 import MyAgenda from "./pages/MyAgenda";
@@ -60,8 +60,8 @@ const App = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/IntroduceDaoMarket" element={<IntroduceDaoMarket />} />
           <Route path="/Vote" element={<Vote />} />
-          <Route path="/MarketPlaceDetail" element={<MarketPlaceDetail />} />
-          <Route path="/MarketPlaceList" element={<MarketPlaceList />} />
+          <Route path="/PundingPlaceDetail" element={<PundingPlaceDetail />} />
+          <Route path="/PundingPlaceList" element={<PundingPlaceList />} />
           <Route path="/MyPage" element={<MyPage />} />
           <Route path="/MyInvest" element={<MyInvest />} />
           <Route path="/MyAgenda" element={<MyAgenda />} />

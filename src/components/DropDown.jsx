@@ -31,7 +31,7 @@ const DropDown = () => {
       {/* 참여 */}
       <li className="mainmenu">
         <Link
-          to="/MarketPlaceList"
+          to="/PundingPlaceList"
           className="mr-12 pl-6 hover:text-gray-900 flex items-center"
         >
           <FaStore className="mr-1" />
@@ -39,7 +39,7 @@ const DropDown = () => {
         </Link>
         <ul className="text-center w-[130px] bg-white submenu speech-bubble p-4">
           <li>
-            <Link to="/MarketPlaceList">마켓플레이스</Link>
+            <Link to="/PundingPlaceList">펀딩플레이스</Link>
           </li>
           <li className="py-2">
             <Link to="/SaleNFT">NFT 판매</Link>

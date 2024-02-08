@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import junhyukjung from "../images/junhyukjung.png";
 
-const MarketList = () => {
+const PundingList = () => {
   return (
     <>
       <div className="container px-5 py-14 mx-auto">
         <div className="flex flex-wrap -m-4">
           <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
             <div className="block relative h-48 rounded overflow-hidden text-center">
-              <Link to="/MarketPlaceDetail">
+              <Link to="/PundingPlaceDetail">
                 <img
                   src={junhyukjung}
                   alt="junhyukjung"
@@ -104,4 +104,4 @@ const MarketList = () => {
   );
 };
 
-export default MarketList;
+export default PundingList;
