@@ -24,6 +24,11 @@ const Header = ({ profileImage }) => {
     }
   };
 
+  // 관리자 계정 등록 기능입니다. 뒤에 추가로 입력하면 되고 입력하게 되면 우측 상단 마이페이지 아래 관리자 페이지가 추가됩니다. 안 쓰는 계정 주소 입력 추천
+  const isAdmin =
+    account === "0xe3cd9fc292b724095874522026fb68932329296c" &&
+    "관리자 메타마스크 주소";
+
   return (
     <>
       <TopPopup />
@@ -75,6 +80,11 @@ const Header = ({ profileImage }) => {
                         <li className="pb-4">
                           <Link to="/MyPage">마이페이지</Link>
                         </li>
+                        {isAdmin && (
+                          <li className="pb-4">
+                            <Link to="/Admin">관리자페이지</Link>
+                          </li>
+                        )}
                         <button
                           className="text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-50"
                           onClick={() => setAccount("")}
