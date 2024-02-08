@@ -9,7 +9,7 @@ const Contact = () => {
   const [msg, setMsg] = useState("");
   const [showPopup, setShowPopup] = useState(false);
 
-  // 텔레그램 관련 api인데 원래 .env 처리해야하지만 그냥 놔뒀습니다.
+  // 텔레그램 관련 api인데 원래 .env 처리해야하지만 그냥 놔뒀습니다. 마지막에 프로젝트 제출 전 .env 처리 예정
   const sendMsg = async () => {
     try {
       await axios({

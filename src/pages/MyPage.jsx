@@ -30,10 +30,15 @@ const MyPage = () => {
             <Link to="/MyAgenda">
               <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
                 <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
-                  <img src={document} alt="document" className="mb-8 mr-2" />
+                  <img
+                    src={document}
+                    alt="document"
+                    className="mb-8 mr-2"
+                    style={{ width: "200px", height: "150px" }}
+                  />
                 </div>
-                <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-                  <h2 className="text-gray-900 text-xl title-font  font-medium mb-2">
+                <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0 ml-4">
+                  <h2 className="text-gray-900 text-xl title-font font-medium mb-2">
                     나의 안건
                   </h2>
                   <p className="leading-relaxed text-base">
@@ -47,7 +52,7 @@ const MyPage = () => {
                 <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
                   <img src={profile} alt="profile" className="mb-8 mr-2" />
                 </div>
-                <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0 ml-4">
                   <h2 className="text-gray-900 text-xl title-font font-medium mb-2">
                     개인 정보 관리
                   </h2>
