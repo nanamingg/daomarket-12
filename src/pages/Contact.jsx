@@ -158,7 +158,8 @@ const Contact = () => {
                           </h3>
                           <div className="mt-2">
                             <p className="text-sm text-gray-500">
-                              메시지가 성공적으로 전송되었습니다.
+                              문의 주셔서 감사드립니다. 빠른 시일 내에 답변
+                              드리겠습니다.
                             </p>
                           </div>
                         </div>
