@@ -42,7 +42,7 @@ const ProposalDetail = () => {
         if (!contract) return;
 
         const proposal = await contract.methods
-          .getMyProposal(proposalId)
+          .getProposal(proposalId)
           .call();
         setProposal(proposal);
       } catch (error) {

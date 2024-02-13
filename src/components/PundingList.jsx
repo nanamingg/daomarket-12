@@ -51,7 +51,7 @@ const PundingList = () => {
         const fetchedProposals = [];
 
         for (let i = 0; i < proposalsCount; i++) {
-          const proposal = await contract.methods.getMyProposal(i).call();
+          const proposal = await contract.methods.getProposal(i).call();
           fetchedProposals.push(proposal);
         }
 
