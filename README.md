@@ -1,7 +1,7 @@
 # DAOM
 (사이트 이미지 첨부)
 
-[사이트 바로가기 *임시](http://www.naver.com)
+[사이트 바로가기](https://daomarket.vercel.app/)
 
 
 # 프로젝트 소개
