@@ -39,15 +39,17 @@ const ProposalDetail = () => {
   useEffect(() => {
     const fetchProposal = async () => {
       try {
-        if (!contract) return;
+        if (!contract || isNaN(proposalId)) return;
 
+        const parsedProposalId = parseInt(proposalId)
         const proposal = await contract.methods
-          .getProposal(proposalId)
+          .getProposal(parsedProposalId)
           .call();
         setProposal(proposal);
       } catch (error) {
         console.error("안건 정보를 불러오는 중 오류 발생:", error);
       }
+      console.log(proposalId)
     };
 
     fetchProposal();
