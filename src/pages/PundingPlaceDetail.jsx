@@ -5,6 +5,7 @@ import proposal_ABI from "../abis/proposal_ABI";
 import Layout from "../components/Layout";
 import { PROPOSAL_CONTRACT } from "../abis/contractsaddress.js";
 import { IoIosArrowBack } from "react-icons/io";
+import ProposalParticipation from "../components/ProposalParticipation";
 
 const ProposalDetail = () => {
   const { proposalId } = useParams();
@@ -101,27 +102,18 @@ const ProposalDetail = () => {
                 </div>
 
                 <div className="flex items-center mt-4">
-                  <span className="w-40 mr-3 mt-6 text-xl text-gray-500">
-                    진행율: &nbsp;
-                  </span>
-                  <div className="bg-gray-300 w-full rounded-full mt-6">
+                  <span className="w-40 mr-3 mt-6 text-lg">진행율: &nbsp;</span>
+                  <div className="bg-gray-300 w-full rounded-full">
                     <div
                       className="bg-blue-500 text-xs leading-none py-1 text-center text-white rounded-full"
                       style={{ width: "50%" }}
                     >
-                      50%
+                      0%
                     </div>
                   </div>
                   <div className="bg-gray-300 w-full rounded-full"></div>
                 </div>
-                <button
-                  className="flex ml-auto text-white bg-blue-500 border-0 mt-12 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded"
-                  onClick={() => {
-                    // 참여 로직 추가
-                  }}
-                >
-                  참여
-                </button>
+                <ProposalParticipation proposalId={proposalId} />
               </div>
             </div>
           </div>
