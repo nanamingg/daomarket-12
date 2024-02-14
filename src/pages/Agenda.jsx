@@ -148,7 +148,14 @@ const Agenda = () => {
                   name="funding-goal"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   placeholder="ETH 단위로 숫자만 입력해 주세요."
-                  onChange={(e) => setFundingGoal(e.target.value)}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (value === "" || !isNaN(value)) {
+                      setFundingGoal(value);
+                    } else {
+                      alert("숫자만 입력하세요.");
+                    }
+                  }}
                 />
               </div>
               <div className="relative flex-grow w-full">
@@ -156,7 +163,7 @@ const Agenda = () => {
                   htmlFor="content"
                   className="leading-10 text-md text-gray-600"
                 >
-                  펀딩 기간 (최소 1일 부터~ 최대 7일까지)
+                  펀딩 기간 (1~7일)
                 </label>
                 <input
                   type="text"
@@ -164,7 +171,14 @@ const Agenda = () => {
                   name="duration-in-days"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   placeholder="일 단위로 숫자만 입력해 주세요."
-                  onChange={(e) => setDurationInDays(e.target.value)} // 수정된 부분: durationInDays 상태 업데이트
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    if (value === "" || !isNaN(value)) {
+                      setDurationInDays(value);
+                    } else {
+                      alert("숫자만 입력하세요.");
+                    }
+                  }}
                 />
               </div>
             </div>
