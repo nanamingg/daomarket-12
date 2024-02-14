@@ -41,7 +41,7 @@ const ProposalDetail = () => {
       try {
         if (!contract || isNaN(proposalId)) return;
 
-        const parsedProposalId = parseInt(proposalId)
+        const parsedProposalId = parseInt(proposalId);
         const proposal = await contract.methods
           .getProposal(parsedProposalId)
           .call();
@@ -49,7 +49,7 @@ const ProposalDetail = () => {
       } catch (error) {
         console.error("안건 정보를 불러오는 중 오류 발생:", error);
       }
-      console.log(proposalId)
+      console.log(proposalId);
     };
 
     fetchProposal();
@@ -101,8 +101,10 @@ const ProposalDetail = () => {
                 </div>
 
                 <div className="flex items-center mt-4">
-                  <span className="w-40 mr-3 mt-6 text-lg">진행율: &nbsp;</span>
-                  <div className="bg-gray-300 w-full rounded-full">
+                  <span className="w-40 mr-3 mt-6 text-xl text-gray-500">
+                    진행율: &nbsp;
+                  </span>
+                  <div className="bg-gray-300 w-full rounded-full mt-6">
                     <div
                       className="bg-blue-500 text-xs leading-none py-1 text-center text-white rounded-full"
                       style={{ width: "50%" }}
