@@ -76,10 +76,10 @@ const Agenda = () => {
           <div className="container px-5 py-8 mx-auto">
             <div className="flex flex-col text-center w-full mb-12">
               <h1 className="sm:text-5xl text-4xl font-medium title-font mb-4 text-gray-900">
-                제안하고 싶은 안건이 있으신가요?
+                펀딩하고 싶은 안건이 있으신가요?
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-2xl">
-                아래 양식을 통해 제안서를 작성하고 제출해 주세요.
+                아래 양식을 통해 제안서를 작성하고 등록해 주세요.
               </p>
             </div>
             <div className="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end mt-4">
@@ -140,7 +140,7 @@ const Agenda = () => {
                   htmlFor="title"
                   className="leading-10 text-md text-gray-600"
                 >
-                  희망하는 모금 금액
+                  희망하는 모금 금액 (ETH 단위)
                 </label>
                 <input
                   type="text"
@@ -156,7 +156,7 @@ const Agenda = () => {
                   htmlFor="content"
                   className="leading-10 text-md text-gray-600"
                 >
-                  펀딩 기간
+                  펀딩 기간 (최소 1일 부터~ 최대 7일까지)
                 </label>
                 <input
                   type="text"
@@ -191,7 +191,7 @@ const Agenda = () => {
             onClick={handleProposalSubmit}
             className="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg mt-4"
           >
-            제출
+            등록
           </button>
         </section>
       </Layout>
