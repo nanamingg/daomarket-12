@@ -106,7 +106,7 @@ const Agenda = () => {
                   htmlFor="title"
                   className="leading-10 text-md text-gray-600"
                 >
-                  구매를 희망하시는 NFT
+                  구매를 희망하시는 NFT URL
                 </label>
                 <input
                   type="text"
@@ -122,7 +122,7 @@ const Agenda = () => {
                   htmlFor="content"
                   className="leading-10 text-md text-gray-600"
                 >
-                  NFT 이미지
+                  NFT 이미지 URL
                 </label>
                 <input
                   type="text"

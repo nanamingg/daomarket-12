@@ -66,7 +66,7 @@ const DropDown = () => {
             <Link to="/Agenda">안건제출</Link>
           </li>
           <li className="py-2">
-            <Link to="/SuccessAgenda">펀딩된 안건</Link>
+            <Link to="/SuccessAgenda">완료된 안건</Link>
           </li>
           <li>?</li>
         </ul>
