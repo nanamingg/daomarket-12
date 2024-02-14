@@ -63,7 +63,7 @@ const ProposalParticipation = ({ proposalId }) => {
         value={fundAmount}
         onChange={(e) => setFundAmount(e.target.value)}
         placeholder="ETH"
-        className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+        className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
       />
       <button
         className="flex justify-center mt-4 w-full py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded focus:outline-none focus:shadow-outline"
