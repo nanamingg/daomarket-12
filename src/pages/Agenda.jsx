@@ -48,6 +48,10 @@ const Agenda = () => {
     }
   }, [web3]);
 
+  useEffect(() => {
+    console.log(contract);
+  }, [contract]);
+
   const handleProposalSubmit = async () => {
     try {
       const response = await contract.methods
