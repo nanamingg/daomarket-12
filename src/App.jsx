@@ -20,11 +20,9 @@ import MyContact from "./pages/MyContact";
 import SaleNFT from "./pages/SaleNFT";
 import defaultProfileImage from "./images/img.png";
 import SuccessAgenda from "./pages/SuccessAgenda";
-// 멀티시그맛보기 나중에 지우기
-import MultiSig from "./pages/MultiSig";
 import Admin from "./pages/Admin";
 import AdminWarning from "./pages/AdminWarning";
-// 멀티시그맛보기 나중에 지우기
+import AdminLab from "./pages/AdminLab";
 
 const App = () => {
   const [profileImage, setProfileImage] = useState(
@@ -70,15 +68,13 @@ const App = () => {
           <Route path="/MyPage" element={<MyPage />} />
           <Route path="/MyInvest" element={<MyInvest />} />
           <Route path="/MyAgenda" element={<MyAgenda />} />
-          <Route path="FAQ" element={<FAQ />} />
-          <Route path="MyContact" element={<MyContact />} />
+          <Route path="/FAQ" element={<FAQ />} />
+          <Route path="/MyContact" element={<MyContact />} />
           <Route path="/SuccessAgenda" element={<SuccessAgenda />} />
-          <Route path="SaleNFT" element={<SaleNFT />} />
-          <Route path="Admin" element={<Admin />} />
-          <Route path="AdminWarning" element={<AdminWarning />} />
-          {/*멀티시그맛보기 나중에 지우기*/}
-          <Route path="MultiSig" element={<MultiSig />} />
-          {/*멀티시그맛보기 나중에 지우기*/}
+          <Route path="/SaleNFT" element={<SaleNFT />} />
+          <Route path="/Admin" element={<Admin />} />
+          <Route path="/AdminWarning" element={<AdminWarning />} />
+          <Route path="/AdminLab" element={<AdminLab />} />
           <Route
             path="/MyProfile"
             element={

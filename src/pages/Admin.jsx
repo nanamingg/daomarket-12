@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
 import Web3 from "web3";
+import adminLab from "../images/adminLab.png";
 
 //관리자 권한
 async function getAccount() {
@@ -79,10 +80,10 @@ const Admin = () => {
                 </div>
               </div>
             </Link>
-            <Link to="/">
+            <Link to="/AdminLab">
               <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
                 <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full flex-shrink-0">
-                  {/* <img src={profile} alt="profile" className="mb-8 mr-2" /> */}
+                  <img src={adminLab} alt="adminLab" className="my-8 mr-2" />
                 </div>
                 <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
                   <h2 className="text-gray-900 text-xl title-font font-medium mb-2">

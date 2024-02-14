@@ -46,11 +46,6 @@ const Header = ({ profileImage }) => {
           </Link>
           <div className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
             <DropDown />
-            {/*멀티시그맛보기 나중에 지우기*/}
-            <Link to="/MultiSig">
-              <div className="ml-8">멀티시그 맛보기</div>
-            </Link>
-            {/*멀티시그맛보기 나중에 지우기*/}
           </div>
 
           <div>
